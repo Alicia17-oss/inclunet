@@ -19,15 +19,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $sql = "
                 SELECT username, correo, password, 'voluntario' AS tipo_usuario 
                 FROM voluntarios 
-                WHERE username = :username
+                WHERE correo = :correo
                 UNION
                 SELECT username, correo, password, 'organizacion' AS tipo_usuario 
                 FROM organizaciones 
-                WHERE username = :username
+                WHERE username = :correo
             ";
 
             $stmt = $PDO->prepare($sql);
-            $stmt->execute(['username' => $username]);
+            $stmt->bindParam(':correo', $correo);
+            $stmt->execute();
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
             if ($user && password_verify($password, $user['password'])) {
@@ -49,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         } catch (\Throwable $th) {
             $error_message = "Error en la conexión: " . $th->getMessage();
-                echo $error_message;
+            echo $error_message;
         }
     }
 }
