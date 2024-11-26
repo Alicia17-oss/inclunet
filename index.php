@@ -21,15 +21,17 @@
             </nav>
         </div>
 
-        <div class="login-icon" onclick="toggleDropdown()">
-            <i class="fa-regular fa-circle-user"></i>
-            
-            <!-- Menú desplegable -->
-            <div id="dropdown-menu" class="dropdown-menu">
-                <a href="login.html">Iniciar Sesión</a>
-                <a href="signup.html">Registrarse</a>
-            </div>
-        </div>
+        <?php if(!isset($_SESSION['username'])) { ?>
+          <div class="login-icon" onclick="toggleDropdown()">
+              <i class="fa-regular fa-circle-user"></i>
+              
+              <!-- Menú desplegable -->
+              <div id="dropdown-menu" class="dropdown-menu">
+                  <a href="login.html">Iniciar Sesión</a>
+                  <a href="signup.html">Registrarse</a>
+              </div>
+          </div>
+        <?php } ?>
     </div>
 
     <!-- Hero Section -->

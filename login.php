@@ -45,9 +45,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 exit();
             } else {
                 $error_message = "Credenciales incorrectas.";
+                echo $error_message;
             }
         } catch (\Throwable $th) {
             $error_message = "Error en la conexión: " . $th->getMessage();
+                echo $error_message;
         }
     }
 }
