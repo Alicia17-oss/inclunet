@@ -3,7 +3,7 @@
 class connection{
     public function connect(){
         $host = isset($_ENV['DB_HOST']) ? $_ENV['DB_HOST'] : 'db5016735543.hosting-data.io';
-        $dbname = isset($_ENV['DB_NAME']) ? $_ENV['DB_NAME'] : 'inclunet';
+        $dbname = isset($_ENV['DB_NAME']) ? $_ENV['DB_NAME'] : 'dbs13540698';
         $username = isset($_ENV['DB_USER']) ? $_ENV['DB_USER'] : 'dbu4995177';
         $password = isset($_ENV['DB_PASSWORD']) ? $_ENV['DB_PASSWORD'] : 'Cristal1234$';
 
