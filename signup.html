@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header" id="header">
+        <div><img src="Imagenes/logoinclunetspace.png" alt="Inclunet Space logo" height="60" width="60"></div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="quienes somos.html">Quiénes somos</a></li>
+                    <li><a href="voluntariado.html">Voluntariado</a></li>
+                    <li><a href="organizaciones.html">Organizaciones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="sigin">
+        <div class="sigin-container">
+            <div class="image-form-section">
+                <img src="ruta/a/tu-imagen.png" alt="Imagen de registro">
+            </div>
+            <div class="form-section">
+                <h2>Crea tu cuenta de manera gratuita</h2>
+                <form action="signup.php" method="POST">
+
+                    <label for="tipo_usuario">Tipo de Usuario*</label>
+                    <select id="tipo_usuario" name="tipo_usuario" required>
+                        <option value="voluntario" selected>Voluntario</option>
+                        <option value="organizacion">Organización</option>
+                    </select>
+
+                    <!-- Campos específicos para voluntario -->
+                    <div id="voluntario-fields">
+                        <label for="username">Username*</label>
+                        <input type="text" id="username" name="username" required>
+
+                        <label for="nombres">Nombres*</label>
+                        <input type="text" id="nombres" name="nombres">
+
+                        <label for="apellidos">Apellidos*</label>
+                        <input type="text" id="apellidos" name="apellidos">
+                    </div>
+
+                    <!-- Campos específicos para organización -->
+                    <div id="organizacion-fields" style="display: none;">
+                        <label for="nombre_org">Nombre de la Organización*</label>
+                        <input type="text" id="nombre_org" name="nombre_org" required>
+                        
+                        <label for="telefono_org">Teléfono de la Organización*</label>
+                        <input type="tel" id="telefono_org" name="telefono_org" required>
+                    </div>
+
+                    <!-- Campos comunes para ambos tipos de usuario -->
+                    <label for="correo">Correo electrónico*</label>
+                    <input type="email" id="correo" name="correo" required>
+
+                    <label for="contraseña">Contraseña*</label>
+                    <input type="password" id="contrasenia" name="contrasenia" required>
+
+                    <label for="confirmar-contrasenia">Confirmar contraseña*</label>
+                    <input type="password" id="confirmar-contrasenia" name="confirmar-contrasenia" required>
+                
+                    <button type="submit">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="footer-content">
+        <h3>Inclunet Space</h3>
+        <p>Conéctate con nosotros y sé parte del cambio social.</p>
+        <ul class="footer-links">
+            <li><a href="como funciona.html">Cómo funciona</a></li>
+            <li><a href="quienes somos.html">Quiénes somos</a></li>
+            <li><a href="voluntariado.html">Voluntariado</a></li>
+            <li><a href="organizaciones.html">Organizaciones</a></li>
+            <li><a href="#">App. móvil</a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Inclunet Space. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,721 @@
+/* reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+
+.scrolled {
+    background-color: rgb(59, 59, 59);
+  }
+
+.header a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color:rgb(73, 16, 231)
+}
+
+/* Menu de navegacion */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff00; 
+    color: rgb(0, 236, 55);
+    border-radius: 5px;
+}
+
+/* Icono de login */
+.login-icon a {
+    color: #80fc0c;
+    font-size: 24px;
+}
+
+/* Cambia el color del ícono al pasar el cursor */
+.login-icon a:hover {
+    color: rgb(56, 5, 240);
+}
+
+/* Estilos del menú desplegable del login */
+.dropdown-menu {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 40px; /* Ajusta la posición según sea necesario */
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    z-index: 1000;
+}
+
+/* Estilos de los enlaces dentro del menú */
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('Imagenes/Hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color:rgb(255, 0, 0)
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color:rgb(0, 236, 55)
+}
+
+.hero .explore-btn {
+    background-color: orange;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+        
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+        
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+        
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    text-align: center;
+}
+
+.link {
+    background-color: #4CAF50; /* Color del botón */
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+        
+.link:hover {
+    background-color: #6bc04a;
+}
+
+/* Ajuste del contenedor del slider */
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+/* Ajuste de flechas de navegación */
+.nav-arrow {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    z-index: 2;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+/* Contenedor de las tarjetas en fila */
+.card-slider {
+    display: flex;
+    gap: 15px;
+    transition: transform 0.5s ease;
+    will-change: transform; /* Optimización para la transición */
+}
+
+/* Ajustes para cada tarjeta */
+.card {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 180px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    
+}
+
+/* Estilo de la tarjeta activa */
+.card.active {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    opacity: 1; /* Hace que la tarjeta activa tenga más visibilidad */
+}
+
+/* Icono dentro de las tarjetas */
+.card-icon {
+    font-size: 40px;
+    color: inherit;
+}
+
+/* Efecto de escala al hacer hover */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para las tarjetas cuando se deslicen */
+.card-slider {
+    display: flex;
+    gap: 15px;
+}
+
+
+
+
+
+/*Mision section*/
+
+.mision {
+    padding: 20px 100px;
+    background-color: #f0f0f0; /* Un color de fondo claro */
+    margin: 20px 0; /* Margen entre secciones */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+        
+h2 {
+    color: #4CAF50; /* Cambia el color según tu esquema de color */
+    text-align: center;
+}
+
+/* beneficios*/
+        
+.beneficios-container {
+    display: flex; /* Usar flexbox para disposición horizontal */
+    justify-content: space-around; /* Espacio entre los beneficios */
+    flex-wrap: wrap; /* Permitir que se ajusten en pantallas pequeñas */
+}
+        
+.beneficio {
+    background-color: #f0f0f0; /* Color de fondo claro */
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 20px;
+    margin: 10px; /* Margen entre beneficios */
+    flex: 1 1 200px; /* Ajustar tamaño mínimo */
+    text-align: center; /* Centrar texto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.beneficio i {
+    font-size: 30px; /* Tamaño del ícono */
+    color: #e80000; /* Color del ícono */
+    margin-bottom: 10px; /* Espacio entre ícono y texto */
+}
+        
+.beneficio p {
+    margin: 0; /* Sin margen */
+}
+        
+.icono {
+            width: 50px; /* Ajusta el tamaño según sea necesario */
+            height: auto; /* Mantiene la proporción del ícono */
+            display: block; /* Asegura que el ícono esté en su propia línea */
+            margin: 0 auto 10px; /* Centra el ícono y da un margen inferior */
+        }
+        
+        .active {
+            background-color: #E0E0E0;
+            border-radius: 5px;
+        }
+
+        .eventos-recientes {
+            padding: 10px;
+            background-color: green;
+            text-align: center;
+        }
+        .eventos-recientes h2 {
+            color: black;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .eventos {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .evento {
+            background-color: #459f72;
+            color: white;
+            border-radius: 10px;
+            width: 20%;
+            margin: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .evento:hover {
+            transform: translateY(-10px);
+        }
+        .evento h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .evento p {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+        .evento time {
+            display: block;
+            font-size: 0.9em;
+            margin-top: 10px;
+            color: #ccc;
+        }
+
+        .cta {
+            background-color: #4CAF50; /* Color de fondo que resalta */
+            color: white; /* Color de texto */
+            padding: 20px;
+            text-align: center; /* Centra el texto */
+            margin: 20px 0;
+            border-radius: 5px; /* Esquinas redondeadas */
+        }
+        
+        .btn-cta {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: white; /* Color de fondo del botón */
+            color: #4CAF50; /* Color del texto del botón */
+            text-decoration: none; /* Eliminar subrayado */
+            border-radius: 5px; /* Esquinas redondeadas */
+            font-weight: bold; /* Negrita para destacar */
+            transition: background-color 0.3s; /* Efecto de transición */
+        }
+        
+        .btn-cta:hover {
+            background-color: #e0e0e0; /* Color al pasar el mouse */
+        }
+
+        .organizaciones {
+            padding: 20px;
+            background-color: #f9f9f9; /* Color de fondo claro */
+            margin: 20px 0; /* Margen entre secciones */
+        }
+        
+        .organizacion {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px; /* Esquinas redondeadas */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
+        }
+        
+        h2 {
+            color: #4CAF50; /* Cambia según tu esquema de color */
+        }
+        
+        .ver-todos {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .ver-todas {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+/*Formulario sign in*/
+
+.sigin {
+    display: flex;
+    margin-top: 135px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.login {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.sigin-container {
+    display: flex;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container {
+    width: 600px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-form-section {
+    flex: 1;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-form-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.form-section {
+    flex: 1;
+    padding: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="select"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+select {
+    appearance: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input {
+    margin-right: 5px;
+}
+
+.forget-password a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forget-password a:hover {
+    text-decoration: underline;
+}
+
+.signip-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signip-link a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.signip-link a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+footer {
+    background-color: #333; /* Color de fondo oscuro */
+    color: white; /* Color del texto */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centrar texto */
+}
+        
+.footer-content {
+    margin-bottom: 15px; /* Espacio entre contenido y bottom */
+}
+        
+.footer-content h3 {
+    margin: 0; /* Sin margen */
+    font-size: 24px; /* Tamaño de fuente del título */
+}
+        
+.footer-links {
+    list-style: none; /* Sin puntos en la lista */
+    padding: 0; /* Sin padding */
+}
+        
+.footer-links li {
+    display: inline; /* Elementos en línea */
+    margin: 0 15px; /* Espacio entre enlaces */
+}
+        
+.footer-links a {
+    color: white; /* Color de enlace */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s; /* Transición suave para hover */
+}
+        
+.footer-links a:hover {
+    color: #4CAF50; /* Color de enlace al pasar el mouse */
+}
+        
+.footer-bottom {
+    margin-top: 10px; /* Espacio superior para el texto de derechos */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+}
+
+/* voluntariado */
+
+.card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:rgba(0, 0, 0, 0.1);
+    margin: 15px;
+}
+
+.card-image {
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.gallery-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.rating {
+    color: #ffb400;
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.price {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.info span {
+    font-size: 14px;
+    color: #777;
+}
+
+.explore-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.explore-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
