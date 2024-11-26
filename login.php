@@ -4,7 +4,7 @@ require_once 'connection.php';
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = trim($_POST['username']);
+    //$username = trim($_POST['username']);
     $correo = trim($_POST['correo']);
     $password = trim($_POST['password']);
 

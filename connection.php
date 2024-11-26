@@ -1,12 +1,11 @@
 <?php
 
 class connection{
-    private $host = isset($_ENV['DB_HOST']) ? $_ENV['DB_HOST'] : 'localhost';
-    private $dbname = isset($_ENV['DB_NAME']) ? $_ENV['DB_NAME'] : 'proyecto';
-    private $username = isset($_ENV['DB_USER']) ? $_ENV['DB_USER'] : 'root';
-    private $password = isset($_ENV['DB_PASSWORD']) ? $_ENV['DB_PASSWORD'] : 'password';
-
     public function connect(){
+        $host = isset($_ENV['DB_HOST']) ? $_ENV['DB_HOST'] : 'localhost';
+        $dbname = isset($_ENV['DB_NAME']) ? $_ENV['DB_NAME'] : 'proyecto';
+        $username = isset($_ENV['DB_USER']) ? $_ENV['DB_USER'] : 'root';
+        $password = isset($_ENV['DB_PASSWORD']) ? $_ENV['DB_PASSWORD'] : 'password';
 
         try {
             $dsn="mysql:host={$this->host};dbname={$this->dbname}";
