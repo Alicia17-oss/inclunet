@@ -17,9 +17,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href="quienes somos.php" title="Conoce más sobre nosotros">Quiénes somos</a></li>
-                <li><a href="voluntariado.php" title="Descubre cómo puedes ayudar">Voluntariado</a></li>
-                <li><a href="organizaciones.php" title="Organizaciones asociadas">Organizaciones</a></li>
+                <li><a href="quienes somos.html" title="Conoce más sobre nosotros">Quiénes somos</a></li>
+                <li><a href="voluntariado.html" title="Descubre cómo puedes ayudar">Voluntariado</a></li>
+                <li><a href="organizaciones.html" title="Organizaciones asociadas">Organizaciones</a></li>
             </ul>
         </nav>
         <?php if (!isset($_COOKIE['username'])) { ?>

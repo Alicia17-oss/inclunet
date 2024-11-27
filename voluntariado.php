@@ -17,9 +17,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href="quienes somos.php" title="Conoce más sobre nosotros">Quiénes somos</a></li>
-                <li><a href="voluntariado.php" title="Descubre cómo puedes ayudar">Voluntariado</a></li>
-                <li><a href="organizaciones.php" title="Organizaciones asociadas">Organizaciones</a></li>
+                <li><a href="quienes somos.html" title="Conoce más sobre nosotros">Quiénes somos</a></li>
+                <li><a href="voluntariado.html" title="Descubre cómo puedes ayudar">Voluntariado</a></li>
+                <li><a href="organizaciones.html" title="Organizaciones asociadas">Organizaciones</a></li>
             </ul>
         </nav>
         <?php if (!isset($_COOKIE['username'])) { ?>
@@ -56,7 +56,7 @@
         <section class="testimonios">
             <h2>Lo que dicen nuestros voluntarios</h2>
             <div class="testimonio">
-                <img src="https://images.unsplash.com/photo-1528763380143-d52a06b9ac8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDh8fGdpcmx8ZW58MHx8fHwxNjg1NjU3NTM2&ixlib=rb-1.2.1&q=80&w=400" alt="Foto de María García, coordinadora de proyectos">
+                <img src="https://images.unsplash.com/photo-1600186348470-df88307f8d5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDV8fHBlcnNvbnxlbnwwfHx8fDE2ODU2NjAzNjE&ixlib=rb-1.2.1&q=80&w=400" alt="Retrato de Ana">
                 <blockquote>"El voluntariado con Inclunet Space ha sido una de las experiencias más gratificantes de mi vida."</blockquote>
                 <p><strong>- Ana Martínez</strong></p>
             </div>
