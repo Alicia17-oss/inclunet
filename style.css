@@ -307,6 +307,7 @@ h2 {
         
 .beneficio p {
     margin: 0; /* Sin margen */
+    color: #333;
 }
         
 .icono {
@@ -495,7 +496,7 @@ h2 {
 
 p {
     font-size: 14px;
-    color: #666;
+    color: #EEE;
     margin-bottom: 20px;
 }
 
@@ -687,7 +688,7 @@ h3 {
 }
 
 p {
-    color: #777;
+    color: #EEE;
     font-size: 14px;
     margin: 5px 0;
 }
@@ -722,4 +723,11 @@ p {
 .explore-button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
+}
+.Participar {
+  color: #fff;
+}
+
+.organizaciones p {
+  color: #000;
 }
