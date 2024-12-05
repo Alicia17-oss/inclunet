@@ -19,7 +19,7 @@
 <body>
     <header id="header" class="header">
         <div class="logo">
-            <img src="Imagenes/logoinclunetspace.png" alt="Inclunet Space logo" height="60" width="60">
+            <img src="Imagenes/logoinclunetspace.png" alt="Inclunet Space logo">
         </div>
         <div>
             <nav>
