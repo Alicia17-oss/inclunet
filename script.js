@@ -8,19 +8,19 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// desplegar menu de login
+// Desplegar menú de login
 function toggleDropdown() {
-    const menu = document.getElementById("dropdown-menu");
+    const menu = document.getElementById("user-menu");
     menu.style.display = menu.style.display === "none" || menu.style.display === "" ? "block" : "none";
 }
 
 // Cierra el menú si haces clic fuera de él
 window.onclick = function(event) {
-    const dropdown = document.getElementById("dropdown-menu");
+    const dropdown = document.getElementById("user-menu");
     if (!event.target.closest('.login-icon')) {
         dropdown.style.display = "none";
     }
-}
+};
 
 
 document.addEventListener("DOMContentLoaded", function() {
