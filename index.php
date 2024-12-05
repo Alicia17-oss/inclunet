@@ -21,6 +21,7 @@
         <div class="logo">
             <img src="Imagenes/logoinclunetspace.png" alt="Logotipo de Inclunet Space" height="60" width="60">
         </div>
+        <div>
         <nav>
             <ul>
                 <li><a href="quienes somos.html">Quiénes somos</a></li>
@@ -40,6 +41,7 @@
             <p style="color:#fff;">Bienvenido, <?php echo htmlspecialchars($_COOKIE['username']); ?></p>
             <?php } ?>
         </nav>
+        </div>
     </header>
 
     <main>
