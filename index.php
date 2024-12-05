@@ -19,29 +19,40 @@
 <body>
     <header id="header" class="header">
         <div class="logo">
-            <img src="Imagenes/logoinclunetspace.png" alt="Logotipo de Inclunet Space" height="60" width="60">
+            <img src="Imagenes/logoinclunetspace.png" alt="Inclunet Space logo">
         </div>
         <div>
-        <nav>
-            <ul>
-                <li><a href="quienes somos.html">Quiénes somos</a></li>
-                <li><a href="voluntariado.html">Voluntariado</a></li>
-                <li><a href="organizaciones.html">Organizaciones</a></li>
-            </ul>
-            <?php if (!isset($_COOKIE['username'])) { ?>
-                 <div class="header-buttons">
-                    <a href="login.html">
-                        <button class="login-btn">Iniciar sesión</button>
-                    </a>
-                    <a href="signup.html">
-                          <button class="signup-btn">Registrarse</button>
-                    </a>
-                </div>
-            <?php } else { ?>
-            <p style="color:#fff;">Bienvenido, <?php echo htmlspecialchars($_COOKIE['username']); ?></p>
-            <?php } ?>
-        </nav>
-        </div>
+            <nav>
+                <ul>
+                    <li><a href="quienes somos.html">Quiénes somos</a></li>
+                    <li><a href="voluntariado.html">Voluntariado</a></li>
+                    <li><a href="organizaciones.html">Organizaciones</a></li>
+                </ul>
+                <?php if (!isset($_COOKIE['username'])) { ?>
+                    <div class="header-buttons">
+                        <a href="login.html">
+                            <button class="login-btn">Iniciar sesión</button>
+                        </a>
+                        <a href="signup.html">
+                            <button class="signup-btn">Registrarse</button>
+                        </a>
+                    </div>
+                <?php } else { ?>
+                    <div class="user-menu-container">
+                        <!-- Botón para mostrar el menú -->
+                        <button class="login-icon" onclick="toggleDropdown()">Bienvenido, <?php echo htmlspecialchars($_COOKIE['username']); ?> </button>
+        
+                         <!-- Menú desplegable -->
+                        <div id="user-menu" class="dropdown-menu">
+                            <a href="profile.html">Mi perfil</a>
+                            <a href="settings.html">Configuración</a>
+                            <a href="logout.php" onclick="window.location.reload();">Cerrar sesión</a>
+
+                        </div>
+                    </div>
+                <?php } ?>
+            </nav>
+        </div>     
     </header>
 
     <main>
