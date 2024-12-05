@@ -23,22 +23,23 @@
         </div>
         <nav>
             <ul>
-                <li><a href="quienes somos.php" title="Conoce más sobre nosotros">Quiénes somos</a></li>
-                <li><a href="voluntariado.php" title="Descubre cómo puedes ayudar">Voluntariado</a></li>
-                <li><a href="organizaciones.php" title="Organizaciones asociadas">Organizaciones</a></li>
+                <li><a href="quienes somos.html">Quiénes somos</a></li>
+                <li><a href="voluntariado.html">Voluntariado</a></li>
+                <li><a href="organizaciones.html">Organizaciones</a></li>
             </ul>
+            <?php if (!isset($_COOKIE['username'])) { ?>
+                 <div class="header-buttons">
+                    <a href="login.html">
+                        <button class="login-btn">Iniciar sesión</button>
+                    </a>
+                    <a href="signup.html">
+                          <button class="signup-btn">Registrarse</button>
+                    </a>
+                </div>
+            <?php } else { ?>
+            <p style="color:#fff;">Bienvenido, <?php echo htmlspecialchars($_COOKIE['username']); ?></p>
+            <?php } ?>
         </nav>
-        <?php if (!isset($_COOKIE['username'])) { ?>
-        <div class="login-icon" onclick="toggleDropdown()">
-            <i class="fa-regular fa-circle-user"></i>
-            <div id="dropdown-menu" class="dropdown-menu">
-                <a href="login.html" title="Accede a tu cuenta">Iniciar Sesión</a>
-                <a href="signup.html" title="Regístrate ahora">Registrarse</a>
-            </div>
-        </div>
-        <?php } else { ?>
-        <p style="color:#fff;">Bienvenido, <?php echo htmlspecialchars($_COOKIE['username']); ?></p>
-        <?php } ?>
     </header>
 
     <main>
