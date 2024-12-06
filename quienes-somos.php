@@ -56,11 +56,16 @@
     </header>
 
     <main>
-        <!-- Sección Hero -->
-        <section class="hero">
-            <img src="https://es.statefarm.com/content/dam/sf-library/en-us/secure/legacy/simple-insights/wheres-my-money-going-wide.jpg" class="hero-img">
-            <h1>Quiénes Somos</h1>
-        </section>
+        <!-- Hero Section -->
+    <div class="hero">
+        <img src="Imagenes/hero.webp" alt="Personas colaborando en actividades comunitarias">
+        <h1>Inclunet Space</h1>
+        <h2>Conecta con tu propósito: <br> Haz la diferencia hoy</h2>
+        <p>Únete a proyectos que transforman comunidades <br> y deja tu huella en el mundo.</p>
+        <a href="voluntariado.html">
+            <button  class="cta-hero"> Explorar Oportunidades de Voluntariado</button>
+        </a> 
+    </div>
 
         <!-- Misión, Visión, Valores -->
         <section class="mvv">
