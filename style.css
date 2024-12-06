@@ -582,7 +582,7 @@ select {
     text-decoration: underline;
 }
 
-form-section button {
+.form-section button {
     width: 100%;
     padding: 10px;
     background-color: #4CAF50;
