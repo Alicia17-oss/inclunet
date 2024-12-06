@@ -582,7 +582,7 @@ select {
     text-decoration: underline;
 }
 
-button {
+form-section button {
     width: 100%;
     padding: 10px;
     background-color: #4CAF50;
@@ -695,17 +695,6 @@ footer {
 .rating {
     color: #ffb400;
     font-size: 16px;
-}
-
-h3 {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-p {
-    color: #EEE;
-    font-size: 14px;
-    margin: 5px 0;
 }
 
 .price {
