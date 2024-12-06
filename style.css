@@ -502,19 +502,6 @@ button:hover {
     padding: 40px;
 }
 
-h2 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 14px;
-    color: #EEE;
-    margin-bottom: 20px;
-}
-
 label {
     display: block;
     font-size: 14px;
