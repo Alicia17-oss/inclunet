@@ -57,127 +57,158 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
-            <img src="Imagenes/Hero.jpg" alt="Personas colaborando en actividades comunitarias">
-            <h1>Ayuda a miles de personas</h1>
-            <a href="#" class="Participar" title="Explora oportunidades de voluntariado">Let's Explore</a>
-        </section>
+    <div class="hero">
+        <img src="Imagenes/hero.png" alt="Personas colaborando en actividades comunitarias">
+        <h1>Inclunet Space</h1>
+        <h2>Conecta con tu propósito: <br> Haz la diferencia hoy</h2>
+        <p>Únete a proyectos que transforman comunidades <br> y deja tu huella en el mundo.</p>
+        <a href="voluntariado.html">
+            <button  class="cta-hero"> Explorar Oportunidades de Voluntariado</button>
+        </a> 
+    </div>
 
-        <!-- Slider -->
-        <section class="slider-container">
-            <div class="card-slider">
-                <article class="card">
-                    <div class="card-icon"></div>
-                    <h3>Salud</h3>
-                    <p style="color:#444;">Apoya proyectos que mejoran la salud de comunidades vulnerables.</p>
-                </article>
-                <article class="card">
-                    <div class="card-icon"></div>
-                    <h3>Educación</h3>
-                    <p style="color:#444;">Involúcrate en actividades educativas para todas las edades.</p>
-                </article>
-                <article class="card active">
-                    <div class="card-icon"></div>
-                    <h3>Medio Ambiente</h3>
-                    <p>Contribuye a la conservación y cuidado de nuestro planeta.</p>
-                </article>
-                <article class="card">
-                    <div class="card-icon"></div>
-                    <h3>Inclusión</h3>
-                    <p style="color:#444;">Participa en proyectos que promueven la igualdad y diversidad.</p>
-                </article>
-                <article class="card">
-                    <div class="card-icon"></div>
-                    <h3>Exploración</h3>
-                    <p style="color:#444;">Descubre formas innovadoras de marcar la diferencia.</p>
-                </article>
+    <!--sobre nosotros -->
+    <section class="nosotros-platforma">
+        <article>
+        <h2>¿Qué es <span class="title-second-color">Inclunet Space?</h2>
+        <p>Inclunet Space es una plataforma innovadora que conecta a voluntarios con organizaciones sin fines de <br>
+            lucro para crear un impacto positivo en la sociedad. Facilita la búsqueda de oportunidades de voluntariado <br> 
+            personalizadas y permite a las organizaciones gestionar sus proyectos de manera eficiente.</p>
+        <div class="cards-container">
+            <div class="card-nosotrosv">
+                
+                <h3>Para Voluntarios</h3>
+                <a href="voluntariado.html">
+                    <button  class="cta-nosotrosv">Explora oportunidades ahora</button>
+                </a> 
             </div>
-        </section>
-
-        <!-- Misión -->
-        <section class="mision">
-            <h2>Nuestra Misión</h2>
-            <p>Nuestra misión es conectar a personas comprometidas con el cambio social a través del voluntariado. Buscamos empoderar comunidades locales y promover la inclusión social, ofreciendo oportunidades para contribuir con habilidades y talentos únicos.</p>
-        </section>
-
-        <!-- Beneficios -->
-        <section class="beneficios">
-            <h2>Beneficios del Voluntariado</h2>
-            <div class="beneficios-container">
-                <div class="beneficio">
-                    <i class="fa-solid fa-stairs"></i>
-                    <p><strong>Desarrollo Personal:</strong> Mejora tus habilidades y adquiere experiencia valiosa.</p>
-                </div>
-                <div class="beneficio">
-                    <i class="fa-solid fa-hand-holding-heart"></i>
-                    <p><strong>Contribución a la Comunidad:</strong> Ayuda a mejorar la calidad de vida de los demás.</p>
-                </div>
-                <div class="beneficio">
-                    <i class="fa-solid fa-users"></i>
-                    <p><strong>Redes Sociales:</strong> Conoce a personas con intereses similares.</p>
-                </div>
-                <div class="beneficio">
-                    <i class="fa-solid fa-face-smile"></i>
-                    <p><strong>Satisfacción Personal:</strong> Siente el orgullo de marcar la diferencia.</p>
-                </div>
-                <div class="beneficio">
-                    <img src="Imagenes/Oportunidad_de_aprendizaje.png" alt="Icono de aprendizaje" class="icono">
-                    <p><strong>Oportunidades de Aprendizaje:</strong> Participa en talleres y eventos enriquecedores.</p>
-                </div>
+            <div class="card-nosotroso">
+                
+                <h3>Para Organizaciones</h3>
+                <a href="signup.html">
+                    <button  class="cta-nosotroso">Registra tu organización</button>
+                </a> 
             </div>
-        </section>
+        </div>
+        </article>
+    </section>
 
-        <!-- Eventos recientes -->
-        <section class="eventos-recientes">
-            <h2>Eventos Recientes</h2>
-            <div class="eventos">
-                <article class="evento">
-                    <h3>Jornada de Voluntariado</h3>
-                    <p>Únete a nuestra jornada de voluntariado en apoyo a la comunidad local. ¡Te esperamos!</p>
-                    <time datetime="2024-10-10">10 de octubre, 2024</time>
-                </article>
-                <article class="evento">
-                    <h3>Taller de Inclusión Social</h3>
-                    <p>Aprende estrategias de inclusión social en este taller interactivo.</p>
-                    <time datetime="2024-11-05">5 de noviembre, 2024</time>
-                </article>
-                <article class="evento">
-                    <h3>Conferencia Anual de Voluntariado</h3>
-                    <p>Asiste a nuestra conferencia anual donde compartimos experiencias y planes futuros.</p>
-                    <time datetime="2024-12-15">15 de diciembre, 2024</time>
-                </article>
-            </div>
-        </section>
-
-        <!-- CTA -->
-        <section class="cta">
-            <h2>¡Únete a Nosotros!</h2>
-            <p>Conviértete en parte del cambio. Regístrate como voluntario y descubre cómo puedes ayudar.</p>
-            <a href="signup.html" class="btn-cta" title="Regístrate ahora como voluntario">Registrarme como Voluntario</a>
-        </section>
-
-        <!-- Organizaciones -->
-        <section class="organizaciones">
-            <h2>Organizaciones Asociadas</h2>
-            <div class="lista-organizaciones">
-                <div class="organizacion">
-                    <img src="logo-organizacion1.png" alt="Logo de Organización 1" height="100">
-                    <h3>Organización 1</h3>
-                    <p>Descripción breve de la organización y su misión.</p>
+    <!-- Beneficios de Usar Nuestra Plataforma -->
+    <section class="beneficio-plataforma">
+        <div class="container-beneficios">
+            <h2>Haz que tu <span class="title-second-color">tiempo cuente</h2>
+            <p> 
+                Descubre cómo nuestra plataforma hace que el voluntariado sea más fácil, accesible y significativo.
+            </p>
+      
+            <div class="beneficio-cards">
+                <!-- Card 1 -->
+                <div class="beneficio-card">
+                    <div class="icon-card1">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3>Explora Oportunidades</h3>
+                    <p>
+                        Accede a una amplia variedad de proyectos y actividades de voluntariado. 
+                    </p>
                 </div>
-                <div class="organizacion">
-                    <img src="logo-organizacion2.png" alt="Logo de Organización 2" height="100">
-                    <h3>Organización 2</h3>
-                    <p>Descripción breve de la organización y su misión.</p>
+      
+                <!-- Card 2 -->
+                <div class="beneficio-card">
+                    <div class="icon-card2">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h3>Conexión Directa con Organizaciones</h3>
+                    <p>
+                        Comunícate fácilmente con las organizaciones y encuentra el rol perfecto para ti.
+                    </p>
                 </div>
-                <div class="organizacion">
-                    <img src="logo-organizacion3.png" alt="Logo de Organización 3" height="100">
-                    <h3>Organización 3</h3>
-                    <p>Descripción breve de la organización y su misión.</p>
+      
+                <!-- Card 3 -->
+                <div class="beneficio-card">
+                    <div class="icon-card3">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <h3>Construye tu Perfil como Voluntario</h3>
+                    <p>
+                        Registra tus experiencias y habilidades, y lleva un historial de tus contribuciones.
+                    </p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!--CTA-->
+    <section class="cta">
+        <h2>¿Listo para marcar la diferencia?</h2>
+        <p>Únete a nuestra comunidad de voluntarios y transforma vidas con tus acciones</p>
+        <a href="signup.html">
+            <button  class="btn-cta">Resgistrate ahora</button>
+        </a>
+    </section>
+
+    <!--Como funciona-->
+    <section class="como-funciona">
+        <div class="container-como-funciona">
+
+            <div class="imagen-container">
+                <div class="imagen-como-funciona">
+                    <img src="Imagenes/como_funciona_voluntarios.jpg" alt="Como funciona voluntarios" class="call-img">
+                </div>
+            </div>
+            
+            <div class="texto-content">
+                <h2>
+                     ¿Cómo funciona <span class="title-second-color">Inclunet Space</span> para voluntarios?
+                </h2>
+                <ul class="lista-pasos">
+                    <li>
+                        <i class="fa-solid fa-user-plus"></i>
+                        Regístrate: Crea una cuenta con tu información básica e inicia sesión.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-magnifying-glass-location"></i>
+                        Explora oportunidades: Navega entre las diversas causas y proyectos de tus intereses.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-user-group"></i>
+                        Únete a una causa: Elige la oportunidad que más te motive y empieza a ayudar.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="como-funciona">
+        <div class="container-como-funciona">
+            
+            <div class="texto-content">
+                <h2>
+                     ¿Cómo funciona <span class="title-second-color">Inclunet Space</span> para Organizaciones?
+                </h2>
+                <ul class="lista-pasos">
+                    <li>
+                        <i class="fa-solid fa-user-plus"></i>
+                        Crea tu perfil: Registra tu organización proporcionando los detalles necesarios.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-share-from-square"></i>
+                        Publica oportunidades: Crea y publica las oportunidades de voluntariado disponibles.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-address-card"></i>
+                        Conecta con voluntarios: Recibe postulaciones de voluntarios comprometidos y coordina con ellos.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="imagen-container">
+                <div class="imagen-como-funciona">
+                    <img src="Imagenes/como_funciona_organizaciones.jpg" alt="Como funciona voluntarios" class="call-img">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2024 Inclunet Space - Todos los derechos reservados</p>
