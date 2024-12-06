@@ -352,7 +352,7 @@ button:hover {
 }
 
 
-.container-como-funciona {
+.como-funciona {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -361,12 +361,13 @@ button:hover {
     margin-bottom: 0 auto;
     padding: 20px;
 }
-.como-funciona{
+.container-como-funciona{
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
+    
 }
 
 .imagen-container {
