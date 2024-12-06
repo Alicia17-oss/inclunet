@@ -58,7 +58,7 @@
     <main>
         <!-- Hero Section -->
     <div class="hero">
-        <img src="Imagenes/herp-quienes-somos.webp" alt="Personas colaborando en actividades comunitarias">
+        <img src="Imagenes/herp_quienes_somos.webp" alt="Personas colaborando en actividades comunitarias">
         <h1>Inclunet Space</h1>
         <h2>Conecta con tu propósito: <br> Haz la diferencia hoy</h2>
         <p>Únete a proyectos que transforman comunidades <br> y deja tu huella en el mundo.</p>
