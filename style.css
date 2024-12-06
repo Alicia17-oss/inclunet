@@ -291,7 +291,7 @@ button:hover {
     justify-content: center; 
     align-items: center; 
     text-align: center; 
-    background-image: url('Imagenes/para_voluntarios.jpg');
+    background-image: url('Imagenes/para_voluntarios.webp');
     background-size: cover;
     background-position: center;
     padding: 20px;
@@ -309,7 +309,7 @@ button:hover {
     justify-content: center; 
     align-items: center; 
     text-align: center; 
-    background-image: url('Imagenes/para_organizaciones.jpg');
+    background-image: url('Imagenes/para_organizaciones.webp');
     background-size: cover;
     background-position: center;
     padding: 20px;
@@ -417,7 +417,7 @@ button:hover {
 }
 
 .cta {
-    background-image: url('Imagenes/CTA.jpg');
+    background-image: url('Imagenes/CTA.webp');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
