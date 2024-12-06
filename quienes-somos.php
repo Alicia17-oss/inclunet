@@ -3,37 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiénes Somos - Inclunet Space</title>
-    <meta name="description" content="Descubre más sobre Inclunet Space, nuestra misión, visión y valores. Conectamos personas comprometidas con el cambio social.">
-    <meta name="keywords" content="Quiénes somos, misión, visión, valores, voluntariado, inclusión social">
+    <meta name="description" content="Inclunet Space conecta personas comprometidas con el cambio social mediante oportunidades de voluntariado inclusivas.">
+    <meta name="keywords" content="voluntariado, inclusión, cambio social, organizaciones, desarrollo personal">
     <meta name="author" content="Inclunet Space">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <meta property="og:title" content="Inclunet Space - Voluntariado e Inclusión Social">
+    <meta property="og:description" content="Descubre oportunidades de voluntariado y ayuda a transformar comunidades con Inclunet Space.">
+    <meta property="og:image" content="Imagenes/Hero.jpg">
+    <meta property="og:url" content="https://tu-sitio.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Inclunet Space - Voluntariado e Inclusión Social</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js" defer></script>
 </head>
 <body>
     <header id="header" class="header">
         <div class="logo">
-            <img src="Imagenes/logoinclunetspace.png" alt="Logotipo de Inclunet Space" height="60" width="60">
+            <img src="Imagenes/logoinclunetspace.png" alt="Inclunet Space logo">
         </div>
-        <nav>
-            <ul>
-                <li><a href="quienes somos.php" title="Conoce más sobre nosotros">Quiénes somos</a></li>
-                <li><a href="voluntariado.php" title="Descubre cómo puedes ayudar">Voluntariado</a></li>
-                <li><a href="organizaciones.php" title="Organizaciones asociadas">Organizaciones</a></li>
-            </ul>
-        </nav>
-        <?php if (!isset($_COOKIE['username'])) { ?>
-        <div class="login-icon" onclick="toggleDropdown()">
-            <i class="fa-regular fa-circle-user"></i>
-            <div id="dropdown-menu" class="dropdown-menu">
-                <a href="login.html" title="Accede a tu cuenta">Iniciar Sesión</a>
-                <a href="signup.html" title="Regístrate ahora">Registrarse</a>
-            </div>
-        </div>
-        <?php } else { ?>
-        <p style="color:#fff;">Bienvenido, <?php echo htmlspecialchars($_COOKIE['username']); ?></p>
-        <?php } ?>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="quienes somos.php">Quiénes somos</a></li>
+                    <li><a href="voluntariado.html">Voluntariado</a></li>
+                    <li><a href="organizaciones.html">Organizaciones</a></li>
+                </ul>
+                <?php if (!isset($_COOKIE['username'])) { ?>
+                    <div class="header-buttons">
+                        <a href="login.html">
+                            <button class="login-btn">Iniciar sesión</button>
+                        </a>
+                        <a href="signup.html">
+                            <button class="signup-btn">Registrarse</button>
+                        </a>
+                    </div>
+                <?php } else { ?>
+                    <div class="user-menu-container">
+                        <!-- Botón para mostrar el menú -->
+                        <button class="login-icon" onclick="toggleDropdown()">Bienvenido, <?php echo htmlspecialchars($_COOKIE['username']); ?> </button>
+        
+                         <!-- Menú desplegable -->
+                        <div id="user-menu" class="dropdown-menu">
+                            <a href="profile.html">Mi perfil</a>
+                            <a href="settings.html">Configuración</a>
+                            <a href="logout.php" onclick="window.location.reload();">Cerrar sesión</a>
+
+                        </div>
+                    </div>
+                <?php } ?>
+            </nav>
+        </div>     
     </header>
 
     <main>
