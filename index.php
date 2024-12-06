@@ -24,7 +24,7 @@
         <div>
             <nav>
                 <ul>
-                    <li><a href="quienes somos.html">Quiénes somos</a></li>
+                    <li><a href="quienes somos.php">Quiénes somos</a></li>
                     <li><a href="voluntariado.html">Voluntariado</a></li>
                     <li><a href="organizaciones.html">Organizaciones</a></li>
                 </ul>
