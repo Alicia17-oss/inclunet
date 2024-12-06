@@ -153,7 +153,7 @@
 
             <div class="imagen-container">
                 <div class="imagen-como-funciona">
-                    <img src="Imagenes/como_funciona_voluntarios.jpg" alt="Como funciona voluntarios" class="call-img">
+                    <img src="Imagenes/como_funciona_voluntarios.webp" alt="Como funciona voluntarios" class="call-img">
                 </div>
             </div>
             
@@ -204,7 +204,7 @@
 
             <div class="imagen-container">
                 <div class="imagen-como-funciona">
-                    <img src="Imagenes/como_funciona_organizaciones.jpg" alt="Como funciona voluntarios" class="call-img">
+                    <img src="Imagenes/como_funciona_organizaciones.webp" alt="Como funciona voluntarios" class="call-img">
                 </div>
             </div>
         </div>
