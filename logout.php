@@ -1,50 +1,31 @@
 <?php
 
-include('connection.php');
+include('connection.php');  // Incluye la conexión para asegurarte de que se establece la base de datos
 
-session_start();
+session_start(); // Inicia o retoma la sesión existente
 
-if(isset($_COOKIE['username'])){
-    echo "existe sesión";
+// Verificar si la sesión ya existe
+if (isset($_SESSION['username'])) {
+    // Eliminar todas las variables de sesión
+    $_SESSION = [];
+    
+    // Eliminar la cookie de sesión si está configurada
+    if (ini_get("session.use_cookies")) {
+        $params = session_get_cookie_params();
+        setcookie(session_name(), '', time() - 42000, 
+            $params["path"], $params["domain"], 
+            $params["secure"], $params["httponly"]
+        );
+    }
+
+    // Destruir la sesión en el servidor
     session_destroy();
-    header('Location:'.$URL.'connection.php');?>
-    <div class="header-buttons">
-            <a href="login.html">
-                <button class="login-btn">Iniciar sesión</button>
-            </a>
-            <a href="signup.html">
-                <button class="signup-btn">Registrarse</button>
-            </a>
-       </div>    
-    <?php }else{
-    //echo "no existe sesión";
+
+    // Redirigir al usuario al inicio de sesión
+    header('Location: login.html');
+    exit();
+} else {
+    // Si no hay sesión activa, podrías redirigir o mostrar un mensaje
+    echo "No hay sesión activa.";
 }
-
 ?>
-
-<?php  
-
-
-    if (!isset($_COOKIE['username'])) { ?>
-        <div class="header-buttons">
-            <a href="login.html">
-                <button class="login-btn">Iniciar sesión</button>
-            </a>
-            <a href="signup.html">
-                <button class="signup-btn">Registrarse</button>
-            </a>
-       </div>
-    <?php } else { ?>
-            <div class="user-menu-container">
-                <!-- Botón para mostrar el menú -->
-                <button class="login-icon" onclick="toggleDropdown()">Bienvenido, <?php echo htmlspecialchars($_COOKIE['username']); ?> </button>
-        
-                 <!-- Menú desplegable -->
-                <div id="user-menu" class="dropdown-menu">
-                    <a href="profile.html">Mi perfil</a>
-                    <a href="settings.html">Configuración</a>
-                    <a href="logout.php" onclick="window.location.reload();">Cerrar sesión</a>
-
-                </div>
-            </div>
-        <?php } ?>
