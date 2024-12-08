@@ -14,6 +14,6 @@ session_unset(); // Elimina todas las variables de sesión
 session_destroy(); // Destruye la sesión
 
 // Redirigir a la página de login o cualquier página que desees
-header('Location:' .$URL.); 
+header('Location:' $URL); 
 exit();
 ?>
