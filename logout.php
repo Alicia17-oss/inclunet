@@ -1,31 +1,19 @@
 <?php
 
-include('connection.php');  // Incluye la conexión para asegurarte de que se establece la base de datos
+// Iniciar sesión
+session_start();
 
-session_start(); // Inicia o retoma la sesión existente
-
-// Verificar si la sesión ya existe
-if (isset($_SESSION['username'])) {
-    // Eliminar todas las variables de sesión
-    $_SESSION = [];
-    
-    // Eliminar la cookie de sesión si está configurada
-    if (ini_get("session.use_cookies")) {
-        $params = session_get_cookie_params();
-        setcookie(session_name(), '', time() - 42000, 
-            $params["path"], $params["domain"], 
-            $params["secure"], $params["httponly"]
-        );
-    }
-
-    // Destruir la sesión en el servidor
-    session_destroy();
-
-    // Redirigir al usuario al inicio de sesión
-    header('Location: login.html');
-    exit();
-} else {
-    // Si no hay sesión activa, podrías redirigir o mostrar un mensaje
-    echo "No hay sesión activa.";
+// Verificar si la cookie 'username' existe
+if (isset($_COOKIE['username'])) {
+    // Eliminar la cookie al establecer su tiempo de expiración en el pasado
+    setcookie('username', '', time() - 3600, '/');  // Expira una hora antes
 }
+
+// Destruir las variables de sesión
+session_unset(); // Elimina todas las variables de sesión
+session_destroy(); // Destruye la sesión
+
+// Redirigir a la página de login o cualquier página que desees
+header('Location: index.php'); 
+exit();
 ?>
