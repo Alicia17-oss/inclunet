@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 if ($user['tipo_usuario'] === 'voluntario') {
                     header('Location: index.php');
                 } elseif ($user['tipo_usuario'] === 'organizacion') {
-                    header('Location: panel.html');
+                    header('Location: evento_prueba.php');
                 }
                 exit();
             } else {
