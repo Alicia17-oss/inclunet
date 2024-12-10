@@ -24,9 +24,9 @@
         <div>
             <nav>
                 <ul>
-                    <li><a href="quienes somos.php">Quiénes somos</a></li>
+                    <!--<li><a href="quienes somos.php">Quiénes somos</a></li>
                     <li><a href="voluntariado.php">Voluntariado</a></li>
-                    <li><a href="organizaciones.php">Organizaciones</a></li>
+                    <li><a href="organizaciones.php">Organizaciones</a></li>-->
                     <li><a href="evento_prueba.php">Eventos</a></li>
                 </ul>
                 <?php if (!isset($_COOKIE['username'])) { ?>
@@ -64,7 +64,7 @@
         <h1>Inclunet Space</h1>
         <h2>Conecta con tu propósito: <br> Haz la diferencia hoy</h2>
         <p>Únete a proyectos que transforman comunidades <br> y deja tu huella en el mundo.</p>
-        <a href="voluntariado.html">
+        <a href="evento_prueba.php">
             <button  class="cta-hero"> Explorar Oportunidades de Voluntariado</button>
         </a> 
     </div>
@@ -80,7 +80,7 @@
             <div class="card-nosotrosv">
                 
                 <h3>Para Voluntarios</h3>
-                <a href="voluntariado.html">
+                <a href="evento_prueba.php">
                     <button  class="cta-nosotrosv">Explora oportunidades ahora</button>
                 </a> 
             </div>
