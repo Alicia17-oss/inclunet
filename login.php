@@ -18,14 +18,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Consulta combinada para voluntarios y organizaciones
             $sql = "
-                SELECT username, correo, contrasenia, 'voluntario' AS tipo_usuario 
-                FROM voluntarios 
-                WHERE correo = :correo
+            SELECT username, correo, contrasenia, 'voluntario' AS tipo_usuario 
+            FROM voluntarios 
+            WHERE correo = :correo_voluntario
+            UNION
+            SELECT nombre_organizacion AS username, correo, contrasenia, 'organizacion' AS tipo_usuario 
+            FROM organizaciones 
+            WHERE correo = :correo_organizacion
             ";
 
             $stmt = $PDO->prepare($sql);
-            $stmt->bindParam(':correo', $correo);
+            $stmt->bindParam(':correo_voluntario', $correo);
+            $stmt->bindParam(':correo_organizacion', $correo);
             $stmt->execute();
+            
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
             if ($user && password_verify($password, $user['contrasenia'])) {
