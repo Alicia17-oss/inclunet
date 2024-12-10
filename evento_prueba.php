@@ -199,11 +199,15 @@ body {
 </head>
 <body>
     <!-- Botón para subir evento -->
-    <div class="header">
-        <button>
+
+     <?php if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'organizacion') { ?>
+     <div class="header">
+         <button>
             <a href="formulario_eventos.html">Subir evento</a>
-        </button>
-    </div>
+         </button>
+     </div>                   
+     <?php } ?>
+    
 
     <!-- Contenedor para los eventos -->
     <div class="item-columns">
