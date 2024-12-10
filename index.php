@@ -25,8 +25,8 @@
             <nav>
                 <ul>
                     <li><a href="quienes somos.php">Quiénes somos</a></li>
-                    <li><a href="voluntariado.html">Voluntariado</a></li>
-                    <li><a href="organizaciones.html">Organizaciones</a></li>
+                    <li><a href="voluntariado.php">Voluntariado</a></li>
+                    <li><a href="organizaciones.php">Organizaciones</a></li>
                 </ul>
                 <?php if (!isset($_COOKIE['username'])) { ?>
                     <div class="header-buttons">
