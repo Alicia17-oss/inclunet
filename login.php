@@ -36,6 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             if ($user && password_verify($password, $user['contrasenia'])) {
                 setcookie('username', $user['username']);
+                setcookie('tipo_usuario', $user['tipo_usuario']);
 
                 // Redirigir según el tipo de usuario
                 if ($user['tipo_usuario'] === 'voluntario') {
