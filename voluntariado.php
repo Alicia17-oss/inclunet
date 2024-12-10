@@ -12,15 +12,14 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Header -->
-    <div class="header" id="header">
+    <header id="header" class="header">
         <div class="logo">
             <img src="Imagenes/logoinclunetspace.png" alt="Inclunet Space logo">
         </div>
         <div>
             <nav>
                 <ul>
-                    <li><a href="quienes somos.html">Quiénes somos</a></li>
+                    <li><a href="quienes somos.php">Quiénes somos</a></li>
                     <li><a href="voluntariado.html">Voluntariado</a></li>
                     <li><a href="organizaciones.html">Organizaciones</a></li>
                 </ul>
@@ -42,16 +41,15 @@
                         <div id="user-menu" class="dropdown-menu">
                             <a href="profile.html">Mi perfil</a>
                             <?php if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'organizacion') { ?>
-                            <a href="settings.html">Configuración</a>
-                        <?php } ?> 
-                            <a href="logout.php">Cerrar sesión</a>
-
+                                <a href="settings.html">Panel</a>
+                            <?php } ?>
+                            <a href="logout.php" onclick="window.location.reload();">Cerrar sesión</a>
                         </div>
                     </div>
                 <?php } ?>
             </nav>
         </div>     
-    </div>
+    </header>
 
 
     <main>
