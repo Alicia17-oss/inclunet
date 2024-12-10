@@ -46,9 +46,8 @@
                         <div id="user-menu" class="dropdown-menu">
                             <a href="profile.html">Mi perfil</a>
                             <?php if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'organizacion') { ?>
-                                <a href="settings.html">Configuración</a>
+                                <a href="settings.html">Panel</a>
                             <?php } ?>
-                            <a href="settings.html">Panel</a>
                             <a href="logout.php" onclick="window.location.reload();">Cerrar sesión</a>
                         </div>
                     </div>
