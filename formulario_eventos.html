@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Evento</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #ff9a9e, #fad0c4, #fad0c4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;  /* Cambio de height a min-height */
+        margin: 0;
+        padding: 0;
+        overflow-y: auto;  /* Habilitar el scroll en el body si es necesario */
+    }
+
+    .form-container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        max-width: 500px;
+        width: 100%;
+        text-align: center;
+        overflow-y: auto;  /* Si el formulario es muy largo, habilitar scroll en el formulario */
+    }
+
+    h2 {
+        color: #ff6f61;
+        margin-bottom: 25px;
+        font-size: 28px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .form-group label {
+        display: block;
+        color: #333;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    .form-group input, .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #ff6f61;
+        border-radius: 8px;
+        box-sizing: border-box;
+        transition: all 0.3s ease;
+    }
+
+    .form-group input:focus, .form-group textarea:focus {
+        border-color: #ff3b2f;
+        outline: none;
+    }
+
+    .form-group input[type="file"] {
+        border: none;
+        padding: 0;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #ff6f61;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #ff3b2f;
+    }
+
+    input[type="file"]::file-selector-button {
+        background-color: #ff6f61;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="file"]::file-selector-button:hover {
+        background-color: #ff3b2f;
+    }
+</style>
+
+<body>
+    <div class="form-container">
+        <h2>Crear Evento</h2>
+        <form action="guardar_evento.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nombre_evento">Nombre del Evento</label>
+                <input type="text" id="nombre_evento" name="nombre_evento" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripción</label>
+                <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="fecha_evento">Fecha del Evento</label>
+                <input type="date" id="fecha_evento" name="fecha_evento" required>
+            </div>
+            <div class="form-group">
+                <label for="hora_evento">Hora del Evento</label>
+                <input type="time" id="hora_evento" name="hora_evento" required>
+            </div>
+            <div class="form-group">
+                <label for="ubicacion">Ubicación</label>
+                <input type="text" id="ubicacion" name="ubicacion" required>
+            </div>
+            <div class="form-group">
+                <label for="capacidad">Capacidad</label>
+                <input type="number" id="capacidad" name="capacidad" required>
+            </div>
+            <div class="form-group">
+                <label for="imagen_evento">Imagen del Evento</label>
+                <input type="file" id="imagen_evento" name="imagen_evento" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="id_organizacion">ID de la Organización</label>
+                <input type="text" id="id_organizacion" name="id_organizacion" required>
+            </div>
+            <button type="submit">Crear Evento</button>
+        </form>
+    </div>
+</body>
+</html>
