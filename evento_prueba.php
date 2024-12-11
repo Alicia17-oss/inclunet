@@ -36,30 +36,29 @@ if (empty($eventos)) {
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: "Kumbh Sans", sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
+    font-family: "Kumbh Sans", sans-serif;
+    background-color: #696984;
+    margin: 0;
+    padding: 0;
+    margin-top: 60px; /* Ajusta el tamaño al alto del header */
+}
 
-        .header {
-            text-align: right;
-            padding: 20px;
-        }
+.btn-subir-evento-contairner {
+    display: flex;
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+}
 
-        .header button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .header button a {
-            text-decoration: none;
-            color: white;
-        }
+.btn-subir-evento {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid rgba(28, 216, 237, 0.9);
+    border-radius: 80px;
+    background-color: rgba(28, 216, 237, 0.9);
+    color: #FFFFFF;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px;
+}
 
         .item-columns {
             display: flex;
@@ -115,10 +114,50 @@ if (empty($eventos)) {
     </style>
 </head>
 <body>
-    <div class="header">
-        <button>
-            <a href="formulario_eventos.html">Subir evento</a>
-        </button>
+    <header id="header" class="header">
+        <div class="logo">
+            <img src="Imagenes/logoinclunetspace.png" alt="Inclunet Space logo">
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <!--<li><a href="quienes somos.php">Quiénes somos</a></li>
+                    <li><a href="voluntariado.php">Voluntariado</a></li>
+                    <li><a href="organizaciones.php">Organizaciones</a></li>-->
+                    <li><a href="evento_prueba.php">Eventos</a></li>
+                </ul>
+                <?php if (!isset($_COOKIE['username'])) { ?>
+                    <div class="header-buttons">
+                        <a href="login.html">
+                            <button class="login-btn">Iniciar sesión</button>
+                        </a>
+                        <a href="signup.html">
+                            <button class="signup-btn">Registrarse</button>
+                        </a>
+                    </div>
+                <?php } else { ?>
+                    <div class="user-menu-container">
+                        <!-- Botón para mostrar el menú -->
+                        <button class="login-icon" onclick="toggleDropdown()">Bienvenido, <?php echo htmlspecialchars($_COOKIE['username']); ?> </button>
+        
+                         <!-- Menú desplegable -->
+                        <div id="user-menu" class="dropdown-menu">
+                            <a href="profile.html">Mi perfil</a>
+                            <?php if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'organizacion') { ?>
+                                <a href="evento_prueba.php">Panel</a>
+                            <?php } ?>
+                            <a href="logout.php" onclick="window.location.reload();">Cerrar sesión</a>
+                        </div>
+                    </div>
+                <?php } ?>
+            </nav>
+        </div>     
+    </header>
+    
+    <div class="btn-subir-evento-contairner">
+        <a href="formulario_eventos.html">
+            <button  class="btn-subir-evento"> Subir evento</button>
+        </a> 
     </div>
 
     <div class="item-columns">
