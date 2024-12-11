@@ -156,13 +156,13 @@ if (empty($eventos)) {
             </nav>
         </div>     
     </header>
-    
+    <?php if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'organizacion') { ?>
     <div class="btn-subir-evento-contairner">
         <a href="formulario_eventos.html">
             <button  class="btn-subir-evento"> Subir evento</button>
         </a> 
     </div>
-
+    <?php } ?>
     <div class="item-columns">
         <?php
         if (!empty($eventos)) {
