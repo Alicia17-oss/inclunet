@@ -413,7 +413,7 @@ button:hover {
 }
 .cta {
     background-image: url('Imagenes/CTA.webp');
-    background-attachment: fixed;
+    
     background-size: cover;
     background-position: center;
     color: white; 
