@@ -6,7 +6,6 @@ class connection{
         $dbname = isset($_ENV['DB_NAME']) ? $_ENV['DB_NAME'] : 'dbs13540698';
         $username = isset($_ENV['DB_USER']) ? $_ENV['DB_USER'] : 'dbu4995177';
         $password = isset($_ENV['DB_PASSWORD']) ? $_ENV['DB_PASSWORD'] : 'Cristal1234$';
-        $URL = 'https://inclunet.mx';
 
         try {
             $dsn="mysql:host={$host};dbname={$dbname}";
