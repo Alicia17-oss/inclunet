@@ -149,9 +149,11 @@
     <section class="cta">
         <h2>¿Listo para marcar la diferencia?</h2>
         <p>Únete a nuestra comunidad de voluntarios y transforma vidas con tus acciones</p>
-        <a href="signup.html">
-            <button  class="btn-cta">Resgistrate ahora</button>
-        </a>
+         <?php if (!isset($_COOKIE['username'])) { ?>
+            <a href="signup.html">
+                <button  class="btn-cta">Resgistrate ahora</button>
+            </a> 
+          <?php } ?> 
     </section>
 
     <!--Como funciona-->
