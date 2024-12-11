@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->execute();
 
         // Redirección a evento_prueba.html después de guardar
-        header('Location: evento_prueba.php?success=event_created');
+        header('Location: index.php?success=event_created');
         exit();
     } catch (PDOException $e) {
         // Muestra mensaje amigable de error en lugar de detalles técnicos
@@ -88,4 +88,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit();
     }
 }
-?>
+?>  
