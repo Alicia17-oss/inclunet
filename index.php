@@ -45,7 +45,7 @@
         
                          <!-- Menú desplegable -->
                         <div id="user-menu" class="dropdown-menu">
-                            <!--<a href="profile.html">Mi perfil</a>-->
+                            <a href="profile.html">Mi perfil</a>
                             <?php if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'organizacion') { ?>
                                 <a href="evento_prueba.php">Panel</a>
                             <?php } ?>
@@ -80,16 +80,21 @@
             <div class="card-nosotrosv">
                 
                 <h3>Para Voluntarios</h3>
-                <a href="evento_prueba.php">
+                <?php if (!isset($_COOKIE['username'])) { ?>
+                <a href="voluntariado.html">
                     <button  class="cta-nosotrosv">Explora oportunidades ahora</button>
                 </a> 
+                <?php } ?> 
             </div>
             <div class="card-nosotroso">
                 
                 <h3>Para Organizaciones</h3>
+                <?php if (!isset($_COOKIE['username'])) { ?>
                 <a href="signup.html">
                     <button  class="cta-nosotroso">Registra tu organización</button>
                 </a> 
+                <?php } ?>
+                 
             </div>
         </div>
         </article>
