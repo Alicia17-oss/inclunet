@@ -99,6 +99,7 @@ try {
             <p><strong>Tipo de Usuario:</strong> <?php echo htmlspecialchars($tipo_usuario); ?></p>
         </div>
         <a class="btn" href="editar_perfil.php">Editar Perfil</a>
+        <a class="btn" href="index.php">Ir al Inicio</a>
     </div>
 </body>
 </html>
