@@ -168,6 +168,7 @@ if (empty($eventos)) {
         if (!empty($eventos)) {
             foreach ($eventos as $evento) {
                 ?>
+                <div class="booking-one__single" data-id="<?php echo htmlspecialchars($evento['id_evento']); ?>">
                 <?php if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'organizacion') { ?>
                     <div class="delete-icon" title="Eliminar">
                         <i class="fas fa-trash-alt"></i>
