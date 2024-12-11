@@ -168,13 +168,16 @@ if (empty($eventos)) {
         if (!empty($eventos)) {
             foreach ($eventos as $evento) {
                 ?>
-                <div class="booking-one__single" data-id="<?php echo htmlspecialchars($evento['id_evento']); ?>">
+                <?php if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'organizacion') { ?>
                     <div class="delete-icon" title="Eliminar">
                         <i class="fas fa-trash-alt"></i>
                     </div>
+                    <?php } ?>
+                    <?php if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'organizacion') { ?>
                     <div class="edit-icon" title="Editar">
                         <i class="fas fa-edit"></i>
                     </div>
+                    <?php } ?>
                     <img src="<?php echo htmlspecialchars($evento['imagen_evento']); ?>" alt="Imagen del evento">
                     <h2><?php echo htmlspecialchars($evento['nombre_evento']); ?></h2>
                     <p><?php echo htmlspecialchars($evento['descripcion']); ?></p>
