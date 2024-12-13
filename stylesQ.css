@@ -1,0 +1,232 @@
+/*Pagina de quienes somos*/
+/* Hero Section */
+.hero {
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+    justify-content: center;
+    text-align: left;
+}
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+.hero h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:#F48C06;
+}
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color:#ffffff;
+    text-align: left;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+
+/*¿Que es inclunet space?*/
+.container-unidos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 20px;
+}
+.card-unidos {
+    display: flex;
+    max-width: 1000px;
+    max-height: 310px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.card-unidos img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.content-unidos {
+    padding: 40px;
+    width: 50%;
+}
+.content-unidos p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/*valores, mision, vision*/
+.container-valores {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.card-valores {
+    display: flex;
+    flex: 1 1 calc(60% - 20px);
+    background-color: #24194A;
+    background-image: url('Imagenes/Nuestros-valores.webp');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+    color: #FFFFFF;
+    height: 380px;
+    transition: transform 0.3s;
+}
+.content-valores {  
+    display: flex;
+    flex-direction: column; 
+    align-items: start;
+    justify-content: end; 
+    padding: 40px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Overlay to improve text readability */
+}
+.content-valores h2{
+    color: #FFFFFF;
+}
+.content-valores ul {
+    line-height: 1.6;
+    list-style: none;
+    color: #ffffff;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+.card-valores:hover {
+    transform: scale(1.03);
+}
+.side-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 1 calc(40% - 20px);
+    min-width: 300px;
+}
+
+.side-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    height: 180px;
+    transition: transform 0.3s;
+}
+.side-card:hover {
+    transform: scale(1.03);
+}
+
+.side-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.side-card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.side-card .icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.icon-circle {
+    display: inline-block;
+    background-color: #6C5A9A;
+    color: #FFFFFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.icon-circle:hover {
+    background-color: #FF69B4;
+}
+
+/*Nuestro equipo*/
+.team-section { 
+    padding: 50px; 
+    text-align: center; 
+} 
+.team-section h1 { 
+    font-size: 3rem; 
+    color: #F48C06; 
+} 
+.team-section p { 
+    font-size: 1.2rem; 
+} 
+.team-members { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 30px; 
+} 
+.member-card { 
+    background-color: #252341; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    width: 250px; 
+    text-align: center; 
+    position: relative; 
+    padding: 0; 
+} 
+.member-card img { 
+    width: 100%; 
+    height: auto; 
+    filter: blur(2px) grayscale(100%); 
+} 
+.member-info { 
+    padding: 20px; 
+} 
+.member-info h3 { 
+    font-size: 1.5rem; 
+    margin: 10px 0; 
+    color: #00FFF0; /* Color rosa para el nombre */ 
+} 
+.member-info p { 
+    font-size: 1rem; 
+    color: #fff; 
+    margin: 5px 0; 
+} 
+.social-icons { 
+    display: flex; 
+    justify-content: center; 
+    padding: 10px; 
+    background-color: rgba(255, 255, 255, 0.3);  
+} 
+.social-icons a { 
+    margin: 0 5px; 
+    color: #ffffff; 
+    text-decoration: none; 
+    font-size: 1.2rem
+}
