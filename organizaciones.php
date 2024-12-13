@@ -12,64 +12,108 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header id="header" class="header">
+   <header id="header" class="header">
         <div class="logo">
-            <img src="Imagenes/logoinclunetspace.png" alt="Logotipo de Inclunet Space" height="60" width="60">
+            <img src="Imagenes/logoinclunetspace.png" alt="Inclunet Space logo">
         </div>
-        <nav>
-            <ul>
-                <li><a href="quienes somos.html" title="Conoce más sobre nosotros">Quiénes somos</a></li>
-                <li><a href="voluntariado.html" title="Descubre cómo puedes ayudar">Voluntariado</a></li>
-                <li><a href="organizaciones.html" title="Organizaciones asociadas">Organizaciones</a></li>
-            </ul>
-        </nav>
-        <?php if (!isset($_COOKIE['username'])) { ?>
-        <div class="login-icon" onclick="toggleDropdown()">
-            <i class="fa-regular fa-circle-user"></i>
-            <div id="dropdown-menu" class="dropdown-menu">
-                <a href="login.html" title="Accede a tu cuenta">Iniciar Sesión</a>
-                <a href="signup.html" title="Regístrate ahora">Registrarse</a>
-            </div>
-        </div>
-        <?php } else { ?>
-        <p style="color:#fff;">Bienvenido, <?php echo htmlspecialchars($_COOKIE['username']); ?></p>
-        <?php } ?>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="quienes-somos.php">Quiénes somos</a></li>
+                    <li><a href="voluntariado.php">Voluntariado</a></li>
+                    <li><a href="organizaciones.php">Organizaciones</a></li>
+                </ul>
+                <?php if (!isset($_COOKIE['username'])) { ?>
+                    <div class="header-buttons">
+                        <a href="login.html">
+                            <button class="login-btn">Iniciar sesión</button>
+                        </a>
+                        <a href="signup.html">
+                            <button class="signup-btn">Registrarse</button>
+                        </a>
+                    </div>
+                <?php } else { ?>
+                    <div class="user-menu-container">
+                        <!-- Botón para mostrar el menú -->
+                        <button class="login-icon" onclick="toggleDropdown()">Bienvenido, <?php echo htmlspecialchars($_COOKIE['username']); ?> </button>
+        
+                         <!-- Menú desplegable -->
+                        <div id="user-menu" class="dropdown-menu">
+                            <a href="profile.html">Mi perfil</a>
+                            <?php if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'organizacion') { ?>
+                                <a href="settings.html">Panel</a>
+                            <?php } ?>
+                            <a href="logout.php" onclick="window.location.reload();">Cerrar sesión</a>
+                        </div>
+                    </div>
+                <?php } ?>
+            </nav>
+        </div>     
     </header>
-
     <main>
-        <!-- Hero -->
-        <section class="hero">
-            <img src="https://www.soycest.mx/hubfs/cest/blog/2020/03/original-07711d987aba6a53810c67913aebe0b6.jpg" class="hero-img">
-            <h1>Organizaciones Asociadas</h1>
-        </section>
+      <!-- Hero Section -->
+  <section class="hero">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYfUFkb8wVkzUnBupPhjtX1NzBlQSloibkkw&s" class="hero-img">
+      <h1>Únete como Voluntario</h1>
+      <p>Descubre las organizaciones que trabajan día a día para mejorar comunidades y
+        transformar vidas</p>
+  </section>
 
-        <!-- Lista de organizaciones -->
-        <section class="organizaciones">
-            <h2>Nuestras Aliadas</h2>
-            <ul>
-                <li><strong>Fundación Esperanza:</strong> Trabajando por la igualdad educativa.</li>
-                <li><strong>Red Solidaria:</strong> Apoyo a comunidades vulnerables.</li>
-                <li><strong>Green Earth:</strong> Promoviendo la sostenibilidad ambiental.</li>
-            </ul>
-        </section>
+    <section class="experience-section">
+        <div class="image-area">
+          <img src="https://cdn.pixabay.com/photo/2015/03/15/14/53/kids-674513_1280.jpg" alt="Adventure View" class="main-image">
+          <img src="https://cdn.pixabay.com/photo/2016/03/18/15/21/help-1265227_1280.jpg" alt="Cave View" class="secondary-image">
+          <!--<div class="experience-box">
+            <span class="years">28</span>
+            <span class="description">Years of experience</span>
+          </div> -->
+        </div>
+        <div class="text-area">
+          <h2>¿Qué Hacemos Juntos?</h2>
+          <ul class="features-list">
+            <li>
+              <div class="icon"> <i class="fa-solid fa-check"></i></div>
+              <div>
+                <h3>Colaboramos con diversas organizaciones sin fines de lucro</h3>
+                <p>para promover el cambio social en áreas como educación, medio ambiente, salud y más.</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon"><i class="fa-solid fa-bullseye"></i></div>
+              <div>
+                <h3>Nuestro objetivo</h3>
+                <p>Conectar a las personas con causas significativas y lograr un impacto positivo en nuestra sociedad.</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon"><i class="fa-regular fa-handshake"></i></div>
+              <div>
+                <h3>Fomentamos la creación de redes solidarias</h3>
+                <p>Fomentar un lugar donde voluntarios y organizaciones trabajan mano a mano para alcanzar metas comunes.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <!-- Testimonios -->
-        <section class="testimonios">
-            <h2>Testimonios de Aliados</h2>
-            <div class="testimonio">
-                <img src="https://images.unsplash.com/photo-1595793389746-fab86dbd34a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDZ8fHRlYW19ZW58MHx8fHwxNjg1NjYwNzA2&ixlib=rb-1.2.1&q=80&w=400" alt="Retrato de Laura Gómez">
-                <blockquote>"Trabajar con Inclunet Space ha ampliado nuestra capacidad de impacto en las comunidades."</blockquote>
-                <p><strong>- Laura Gómez, Fundación Esperanza</strong></p>
-            </div>
-        </section>
+    <section class="adventure-section">
+        <div class="imagead">
+          <img src="https://grupoemprender.cl/wp-content/uploads/2019/06/grupoemprender_tuempresa-800x617.jpg" alt="Adventure View">
+        </div>
+        <div class="textad">
+         <!-- <div class="badge">Organiza Tu Propia Iniciativa</div> -->
+          <h2>Organiza Tu Propia Iniciativa</h2>
+          <p class="subtitle">¿Tienes una Idea? Organiza Tu Propia Iniciativa</p>
+          <p class="description">
+            ¿Quieres liderar un proyecto de voluntariado? En Inclunet Spaces te brindamos el respaldo
+            necesario para hacer realidad tus ideas. Trabajemos juntos para planificar, ejecutar y
+            generar un impacto positivo en nuestra sociedad.
+          </p>
+        </div>
+      </section>
 
-        <!-- Call to Action -->
-        <section class="cta">
-            <h2>¿Eres una Organización?</h2>
-            <p>Únete a nuestra red y trabajemos juntos para lograr un cambio sostenible.</p>
-            <a href="signup-organization.html" class="btn-cta">Colaborar con Nosotros</a>
-        </section>
-    </main>
+      <section class="services-section"> <h1>SERVICIOS</h1> <div class="services-grid"> <div class="service-card"> <div class="number">01</div> <h2>Web Development</h2> <p>Conveniently promote transparent materials and stand-alone strategic theme areas.</p> <a href="#" class="read-more">Read More &rarr;</a> </div> <div class="service-card"> <div class="number">02</div> <h2>UI/UX Design</h2> <p>Conveniently promote transparent materials and stand-alone strategic theme areas.</p> <a href="#" class="read-more">Read More &rarr;</a> </div> <div class="service-card"> <div class="number">03</div> <h2>Digital Marketing</h2> <p>Conveniently promote transparent materials and stand-alone strategic theme areas.</p> <a href="#" class="read-more">Read More &rarr;</a> </div> </div> </section>
+                            </main>
 
     <footer>
         <p>&copy; 2024 Inclunet Space - Todos los derechos reservados</p>
