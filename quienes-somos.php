@@ -42,9 +42,12 @@
         
                          <!-- Menú desplegable -->
                         <div id="user-menu" class="dropdown-menu">
-                            <a href="profile.html">Mi perfil</a>
-                            <a href="settings.html">Configuración</a>
+                            <a href="perfil.php">Mi perfil</a>
+                            <?php if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'organizacion') { ?>
+                                <a href="evento_prueba.php">Panel</a>
+                            <?php } ?>
                             <a href="logout.php" onclick="window.location.reload();">Cerrar sesión</a>
+                        </div>
 
                         </div>
                     </div>
