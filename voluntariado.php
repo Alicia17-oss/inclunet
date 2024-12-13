@@ -49,9 +49,9 @@ if (empty($eventos)) {
         <div>
             <nav>
                 <ul>
-                    <li><a href="quienes somos.php">Quiénes somos</a></li>
-                    <li><a href="voluntariado.html">Voluntariado</a></li>
-                    <li><a href="organizaciones.html">Organizaciones</a></li>
+                    <li><a href="quienes-somos.php">Quiénes somos</a></li>
+                    <li><a href="voluntariado.php">Voluntariado</a></li>
+                    <li><a href="organizaciones.php">Organizaciones</a></li>
                 </ul>
                 <?php if (!isset($_COOKIE['username'])) { ?>
                     <div class="header-buttons">
@@ -69,9 +69,9 @@ if (empty($eventos)) {
         
                          <!-- Menú desplegable -->
                         <div id="user-menu" class="dropdown-menu">
-                            <a href="profile.html">Mi perfil</a>
+                            <a href="perfil.html">Mi perfil</a>
                             <?php if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'organizacion') { ?>
-                                <a href="settings.html">Panel</a>
+                                <a href="evento_pueba.php">Panel</a>
                             <?php } ?>
                             <a href="logout.php" onclick="window.location.reload();">Cerrar sesión</a>
                         </div>
