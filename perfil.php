@@ -32,6 +32,23 @@ try {
         echo "No se encontró información del usuario.";
         exit();
     }
+
+    // Ahora, obtener los eventos en los que el voluntario está inscrito
+    if ($tipo_usuario === 'voluntario') {
+        // Consulta para obtener los eventos en los que el voluntario está inscrito
+        $sql_events = "
+            SELECT e.id_evento, e.nombre_evento, e.fecha_evento, e.descripcion 
+            FROM eventos e
+            JOIN inscripciones i ON e.id_evento = i.id_evento
+            WHERE i.id_voluntario = :id_voluntario
+        ";
+        $stmt_events = $PDO->prepare($sql_events);
+        $stmt_events->bindParam(':id_voluntario', $user['id']);
+        $stmt_events->execute();
+
+        // Obtener los eventos
+        $events = $stmt_events->fetchAll(PDO::FETCH_ASSOC);
+    }
 } catch (\Throwable $th) {
     error_log("Error al cargar el perfil: " . $th->getMessage());
     echo "Ocurrió un error al cargar el perfil. Por favor, inténtelo más tarde.";
