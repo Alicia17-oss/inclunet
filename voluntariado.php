@@ -70,7 +70,7 @@ if (empty($eventos)) {
         
                          <!-- Menú desplegable -->
                         <div id="user-menu" class="dropdown-menu">
-                            <a href="perfil.html">Mi perfil</a>
+                            <a href="perfil.php">Mi perfil</a>
                             <?php if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'organizacion') { ?>
                                 <a href="evento_pueba.php">Panel</a>
                             <?php } ?>
