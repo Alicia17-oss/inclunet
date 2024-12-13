@@ -22,24 +22,37 @@ window.onclick = function(event) {
     }
 };
 
+document.addEventListener("DOMContentLoaded", function() { const tipoUsuario = document.getElementById("tipo_usuario"); 
+    const voluntarioFields = document.getElementById("voluntario-fields"); 
+    const organizacionFields = document.getElementById("organizacion-fields"); 
+    tipoUsuario.addEventListener("change", function() { 
+        if (tipoUsuario.value === "voluntario") { 
+            voluntarioFields.style.display = "block"; 
+            organizacionFields.style.display = "none"; 
+        } else if (tipoUsuario.value === "organizacion") { 
+            voluntarioFields.style.display = "none"; 
+            organizacionFields.style.display = "block"; 
+        } 
+    }); 
+});
 
-document.addEventListener("DOMContentLoaded", function() {
-    const tipoUsuario = document.getElementById("tipo_usuario");
-    const voluntarioFields = document.getElementById("voluntario-fields");
-    const organizacionFields = document.getElementById("organizacion-fields");
+$(document).ready(function() {
+    $(".join-event-btn").on("click", function() {
+        var idEvento = $(this).data("id-evento");  // Obtener el ID del evento
 
-    // Mostrar el formulario de voluntario por defecto
-    voluntarioFields.style.display = "block";
-    organizacionFields.style.display = "none";
-
-    tipoUsuario.addEventListener("change", function() {
-        if (tipoUsuario.value === "voluntario") {
-            voluntarioFields.style.display = "block";
-            organizacionFields.style.display = "none";
-        } else if (tipoUsuario.value === "organizacion") {
-            voluntarioFields.style.display = "none";
-            organizacionFields.style.display = "block";
-        }
+        $.ajax({
+            url: 'inscripcion.php',  // Archivo PHP que manejará la inscripción
+            type: 'POST',
+            data: {
+                id_evento: idEvento
+            },
+            success: function(response) {
+                alert(response);  // Mostrar mensaje de éxito o error
+            },
+            error: function() {
+                alert("Hubo un error al intentar inscribirse.");
+            }
+        });
     });
 });
 
