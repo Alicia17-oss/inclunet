@@ -1,0 +1,135 @@
+/*Pagina de quienes somos*/
+/* Hero Section */
+.hero {
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+    justify-content: center;
+    text-align: left;
+}
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+.hero h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:#F48C06;
+}
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color:#ffffff;
+    text-align: left;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+
+.experience-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+  } 
+  .image-area {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .main-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+  .secondary-image {
+    position: absolute;
+    bottom: -30px;
+    left: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .experience-box {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    background-color: #fff;
+    border: 2px solid #ffa500;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .experience-box .years {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #5bae5c;
+  }
+  
+  .experience-box .description {
+    font-size: 1rem;
+    color: #6c6c6c;
+  }
+  
+  Text Area 
+  .text-area {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .text-area h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c2c2c;
+  }
+  
+  .features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .features-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .features-list .icon {
+    font-size: 2rem;
+    color: #5bae5c;
+  }
+  
+  .features-list h3 {
+    font-size: 1.2rem;
+    color: #2c2c2c;
+    margin-bottom: 5px;
+  }
+  
+  .features-list p {
+    font-size: 1rem;
+    color: #6c6c6c;
+    margin: 0;
+  }
+
+  .services-section { padding: 50px; text-align: center; background-color: #fff; } .services-section h1 { font-size: 2.5rem; color: #333; margin-bottom: 20px; } .services-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; } .service-card { background-color: #fff; border-radius: 15px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); overflow: hidden; width: 300px; padding: 20px; text-align: left; position: relative; transition: transform 0.3s, box-shadow 0.3s; } .service-card:hover { transform: translateY(-10px); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2); } .service-card .number { font-size: 4rem; font-weight: bold; color: rgba(106, 13, 173, 0.1); /* Número en el fondo */ position: absolute; top: 10px; right: 10px; z-index: 0; } .service-card h2 { font-size: 1.5rem; margin-top: 10px; margin-bottom: 10px; color: #6a0dad; z-index: 1; position: relative; } .service-card p { font-size: 1rem; color: #666; z-index: 1; position: relative; } .read-more { color: #6a0dad; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px; z-index: 1; position: relative; } .read-more:hover { text-decoration: underline; } .service-icon { font-size: 3rem; color: #6a0dad; margin-bottom: 10px; z-index: 1; position: relative; }

@@ -1,0 +1,343 @@
+/*Pagina de quienes somos*/
+/* Hero Section */
+.hero {
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+    justify-content: center;
+    text-align: left;
+}
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+.hero h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:#F48C06;
+}
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color:#ffffff;
+    text-align: left;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+
+.process-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(180deg, #0b0f24, #16205a);
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.process-header {
+    margin-bottom: 40px;
+}
+
+.process-badge {
+    display: inline-block;
+    background: #1d2955;
+    color: #9dbcf9;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.process-title {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.process-description {
+    font-size: 16px;
+    color: #c2c7e6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.process-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.step {
+    background: linear-gradient(180deg, #1d2955, #0b0f24);
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.step-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.step-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #9dbcf9;
+}
+
+.step-description {
+    font-size: 14px;
+    color: #c2c7e6;
+}
+
+/*Beneficios*/
+
+.metodologia-section { 
+    padding: 50px; 
+    text-align: center; 
+} 
+.metodologia-section h2 { 
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+} 
+.tarjetas { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+} 
+.tarjeta { 
+    background-color: #333; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    width: 300px; 
+    padding: 20px; 
+    color: #fff; 
+    transition: transform 0.3s, background-color 0.3s; 
+    position: relative; 
+} 
+.tarjeta:hover { 
+    transform: translateY(-10px); 
+} 
+.icono { 
+    font-size: 2rem; 
+    margin-bottom: 10px; 
+    color: #fff; 
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+} 
+.tarjeta h3 { 
+    font-size: 1.5rem; 
+    margin-top: 40px; /* Ajuste para dar espacio al icono */ 
+    margin-bottom: 10px; 
+    color: #00AEEF; /* Color azul para el título */ 
+} 
+.tarjeta p { 
+    font-size: 1rem; 
+    color: #bbb; 
+}
+
+.fila { 
+    display: flex; 
+    width: 100%; 
+    justify-content: center; 
+    gap: 40px; /* Espacio entre las tarjetas en una fila */ 
+    margin-bottom: 40px; /* Espacio entre filas */ 
+}
+
+
+.news-section { 
+    padding: 50px; 
+    text-align: center; 
+    background-color: #fff; 
+} 
+.news-section h1 { 
+    font-size: 2.5rem; 
+    color: #333; 
+    margin-bottom: 20px; 
+} 
+.news-section p { 
+    font-size: 1rem; 
+    color: #666; 
+    margin-bottom: 40px; 
+} 
+.articles-grid { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+} 
+.article-card { 
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    width: 300px; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+} 
+.article-card:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2); 
+} 
+.article-card img { 
+    width: 300px; 
+    height: 300px; 
+} 
+.article-info { 
+    padding: 20px; 
+    text-align: left; 
+} 
+.article-info h2 { 
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
+    color: #00AEEF; 
+} 
+.article-info p { 
+    font-size: 1rem; 
+    color: #666; 
+} 
+.article-meta { 
+    font-size: 0.9rem; 
+    color: #999; 
+    margin-bottom: 10px; 
+} 
+.read-more { 
+    color: #00AEEF; 
+    text-decoration: none; 
+    font-weight: bold; 
+    display: inline-block; 
+    margin-top: 10px; 
+} 
+.read-more:hover { 
+    text-decoration: underline; 
+}
+.projects-section { 
+    padding: 50px; 
+    text-align: center; 
+    background-color: #fff; 
+} 
+.projects-section h1 { 
+    font-size: 2.5rem; 
+    color: #333; 
+    margin-bottom: 20px; 
+} 
+.projects-grid { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+} 
+.project-card { 
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    width: 300px; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+} 
+.project-card:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2); 
+} 
+.project-card img { 
+    width: 100%; 
+    height: auto; 
+} 
+.project-info { 
+    padding: 20px; 
+    text-align: left; 
+} 
+.project-info h2 { 
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
+    color: #00AEEF; 
+} 
+.project-info p { 
+    font-size: 1rem; 
+    color: #666; 
+} 
+.project-hero { 
+    position: relative; 
+} 
+.project-hero img { 
+    width: 100%; 
+    height: auto; 
+    filter: grayscale(100%); 
+} 
+.project-hero 
+.title-overlay { 
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.5); 
+    color: #fff; 
+    width: 100%; 
+    padding: 10px; 
+    text-align: center; 
+}
+.join-event-btn {
+    background-color: #007bff; /* Azul de ejemplo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.join-event-btn:hover {
+    background-color: #0056b3;
+}
+
+.container-organizaciones { 
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center; 
+    color: #fff; 
+    width: 80%; 
+    max-width: 1200px; 
+    background: url('Imagenes/para_organizaciones.webp') no-repeat center center; 
+    background-size: cover; 
+    padding: 50px; 
+    border-radius: 10px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+} 
+.container h1 { 
+    font-size: 2.5rem; 
+    color: #fff; 
+    margin-bottom: 20px; 
+} 
+.container h1 span { 
+    color: #0c3d6b; /* Color azul oscuro para resaltar */ 
+} 
+.cta-button { 
+    background-color: #000; 
+    color: #fff; 
+    padding: 15px 30px; 
+    font-size: 1rem; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    display: inline-block; 
+    margin-top: 20px; 
+    transition: background-color 0.3s; 
+} 
+.cta-button:hover { 
+    background-color: #333; 
+}
