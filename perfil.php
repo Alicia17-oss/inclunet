@@ -101,6 +101,63 @@ try {
         <a class="btn" href="editar_perfil.php">Editar Perfil</a>
         <a class="btn" href="index.php">Ir al Inicio</a>
     </div>
+
+    <!-- Mostrar los eventos en los que está inscrito -->
+<?php if (!empty($events)): ?>
+    <h2>Eventos en los que estás inscrito</h2>
+    <div class="events-container">
+        <?php foreach ($events as $event): ?>
+            <div class="event-card">
+                <h3><?php echo htmlspecialchars($event['nombre_evento']); ?></h3>
+                <p><strong>Fecha:</strong> <?php echo date('d M, Y', strtotime($event['fecha_evento'])); ?></p>
+                <p><strong>Descripción:</strong> <?php echo htmlspecialchars($event['descripcion']); ?></p>
+            </div>
+        <?php endforeach; ?>
+    </div>
+<?php else: ?>
+    <p>No estás inscrito en ningún evento.</p>
+<?php endif; ?>
+
+<style>
+    /* Contenedor de los eventos */
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo de las tarjetas */
+.event-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Títulos de los eventos */
+.event-card h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Descripción de los eventos */
+.event-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.event-card p strong {
+    font-weight: bold;
+    color: #333;
+}
 </body>
 </html>
 
