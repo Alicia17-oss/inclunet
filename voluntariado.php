@@ -156,8 +156,8 @@ if (empty($eventos)) {
         </section> -->
 
         <section class="news-section">
-            <h1>NEWS & ARTICLES</h1>
-            <p>Get Every Single Update Blog.</p>
+            <h1>Eventos</h1>
+            <p>.</p>
             <div class="articles-grid">
                 <?php
                     foreach($eventos as $event) {
@@ -210,35 +210,35 @@ if (empty($eventos)) {
             <h2>Beneficios del Voluntariado</h2> 
             <div class="fila"> 
                 <div class="tarjeta"> 
-                    <div class="icono">🎯</div> 
+                    <!--<div class="icono">🎯</div>--> 
                     <h3>Crecimiento personal:</h3> 
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p> 
+                    <p></p> 
                 </div> 
                 <div class="tarjeta"> 
-                    <div class="icono">👥</div> 
+                    <!--<div class="icono">👥</div>--> 
                     <h3>Conexión con personas afines</h3> 
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p> 
+                    <p></p> 
                 </div> 
                 <div class="tarjeta"> 
-                    <div class="icono">🔗</div> 
+                    <!--<div class="icono">🔗</div>--> 
                     <h3>Desarrollo profesional</h3> 
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p> 
+                    <p></p> 
                 </div>
             </div> 
             <div class="fila">
                 <div class="tarjeta"> 
-                    <div class="icono">📊</div> 
+                    <!--<div class="icono">📊</div>--> 
                     <h3>Impacto duradero</h3> 
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p> 
+                    <p></p> 
                 </div> 
                 <div class="tarjeta"> 
-                    <div class="icono">📡</div> 
+                    <!--<div class="icono">📡</div>--> 
                     <h3>Mejora de la salud mental</h3> 
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p> 
+                    <p></p> 
                 </div> <div class="tarjeta"> 
-                    <div class="icono">🔄</div> 
+                    <!--<div class="icono">🔄</div>--> 
                     <h3>Sentimiento de propósito</h3> 
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p> 
+                    <p></p> 
                 </div>  
             </div>
         </section>
@@ -324,8 +324,8 @@ if (empty($eventos)) {
         </div> 
     </section>-->
 
-    <div class="container-organizaciones"> 
-        <h1>Transform your <span>brand today!</span></h1> 
+    <!--<div class="container-organizaciones"> 
+        <h1><span>brand today!</span></h1> 
         <a href="#" class="cta-button">Let's Discuss a Project &rarr;</a> </div>
 
 <!---
