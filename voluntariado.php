@@ -52,7 +52,7 @@ if (empty($eventos)) {
                     <li><a href="index.php">Inicio</a></li>
                     <li><a href="quienes-somos.php">Quiénes somos</a></li>
                     <li><a href="voluntariado.php">Voluntariado</a></li>
-                    <li><a href="organizaciones.php">Organizaciones</a></li>
+                    <!--<li><a href="organizaciones.php">Organizaciones</a></li>-->
                 </ul>
                 <?php if (!isset($_COOKIE['username'])) { ?>
                     <div class="header-buttons">
@@ -99,24 +99,24 @@ if (empty($eventos)) {
             </div>
             <div class="process-steps">
                 <div class="step">
-                    <div class="step-icon">🔧</div>
+                    <!--<div class="step-icon">🔧</div>-->
                     <h3 class="step-title">Educación</h3>
-                    <p class="step-description">Lorem ipsum dolor sit amet consectetur adipiscing elit placerat.</p>
+                    <p class="step-description">Participa en programas de tutoría y apoyo escolar para niños y jóvenes.</p>
                 </div>
                 <div class="step">
-                    <div class="step-icon">✏️</div>
+                    <!--<div class="step-icon">✏️</div>-->
                     <h3 class="step-title">Salud</h3>
-                    <p class="step-description">Lorem ipsum dolor sit amet consectetur adipiscing elit placerat.</p>
+                    <p class="step-description">Apoya a profesionales de la salud en clínicas y hospitales.</p>
                 </div>
                 <div class="step">
-                    <div class="step-icon">💻</div>
+                    <!--<div class="step-icon">💻</div>-->
                     <h3 class="step-title">Medio ambiente</h3>
-                    <p class="step-description">Lorem ipsum dolor sit amet consectetur adipiscing elit placerat.</p>
+                    <p class="step-description">Participa en actividades de limpieza y protección de espacios naturales.</p>
                 </div>
                 <div class="step">
-                    <div class="step-icon">🚀</div>
+                    <!--<div class="step-icon">🚀</div>-->
                     <h3 class="step-title">Animales</h3>
-                    <p class="step-description">Lorem ipsum dolor sit amet consectetur adipiscing elit placerat.</p>
+                    <p class="step-description">Colabora en campañas de concienciación sobre el bienestar animal.</p>
                 </div>
             </div>
         </section>
@@ -192,7 +192,7 @@ if (empty($eventos)) {
                                     echo isset($event['descripcion']) ? htmlspecialchars($event['descripcion']) : 'descripcion no disponible';
                                 ?>
                             </p>
-                            <div class="read-more">READ MORE &rarr;</div>
+                            <div class="read-more">READ MORE</div>
                             <!-- Formulario para inscribirse en el evento --> 
                              <form method="POST" action="inscripcion.php"> 
                                 <input type="hidden" name="id_evento" value="<?php echo $event['id_evento']; ?>">
