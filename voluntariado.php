@@ -86,7 +86,7 @@ if (empty($eventos)) {
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYfUFkb8wVkzUnBupPhjtX1NzBlQSloibkkw&s" class="hero-img">
+            <img src="Imagenes/hero-voluntarios" class="hero-img">
             <h2>Únete como Voluntario</h2>
         </section>
 
