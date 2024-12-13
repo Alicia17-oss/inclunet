@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Inclunet Space conecta personas comprometidas con el cambio social mediante oportunidades de voluntariado inclusivas.">
-    <meta name="keywords" content="voluntariado, inclusión, cambio social, organizaciones, desarrollo personal">
+    <title>Quienes Somos - Inclunet Space</title>
+    <meta name="description" content="Descubre quiénes somos: una plataforma dedicada a conectar voluntarios con organizaciones sin fines de lucro, promoviendo la solidaridad y creando impacto positivo en las comunidades.">
+    <meta name="keywords" content="Voluntariado, inclusión, ayuda social, cambio positivo">
     <meta name="author" content="Inclunet Space">
-    <meta property="og:title" content="Inclunet Space - Voluntariado e Inclusión Social">
-    <meta property="og:description" content="Descubre oportunidades de voluntariado y ayuda a transformar comunidades con Inclunet Space.">
-    <meta property="og:image" content="Imagenes/Hero.jpg">
-    <meta property="og:url" content="https://tu-sitio.com">
-    <meta name="twitter:card" content="summary_large_image">
-    <title>Inclunet Space - Voluntariado e Inclusión Social</title>
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylesG.css">
+    <link rel="stylesheet" href="stylesQ.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <header id="header" class="header">
         <div class="logo">
@@ -57,28 +54,34 @@
 
     <main>
         <!-- Hero Section -->
-    <div class="hero">
-        <img src="Imagenes/herp_quienes_somos.webp" alt="Personas colaborando en actividades comunitarias">
+    <section class="hero">
+        <img src="Imagenes/herp_quienes_somos.jpg" alt="Personas colaborando en actividades comunitarias">
         <h1>Inclunet Space</h1>
         <h2>Conecta con tu propósito: <br> Haz la diferencia hoy</h2>
         <p>Únete a proyectos que transforman comunidades <br> y deja tu huella en el mundo.</p>
         <a href="voluntariado.html">
             <button  class="cta-hero"> Explorar Oportunidades de Voluntariado</button>
         </a> 
-    </div>
+    </section>
 
-        <!-- Misión, Visión, Valores -->
-        <section class="mvv">
-            <div class="mision">
-                <h2>Nuestra Misión</h2>
-                <p>Conectar a personas comprometidas con organizaciones que trabajan por el cambio social, promoviendo el voluntariado e impulsando la inclusión en comunidades de todo el mundo.</p>
+    <section class="container-unidos">
+        <div class="card-unidos">
+            <img src="Imagenes/Inclunet-space.webp" alt="Team Working">
+            <div class="content-unidos">
+                <h2> <span class="title-second-color">Inclunet Space: </span> Unidos por un Propósito Mayor</h2>
+                <p>En Inclunet Space, creemos que el cambio comienza con una pequeña acción, 
+                    una chispa de generosidad y un deseo sincero de marcar la diferencia. Por eso, 
+                    hemos creado un espacio donde las personas con corazones dispuestos a ayudar 
+                    puedan conectar con organizaciones que comparten su visión de un mundo mejor.
+                </p>
             </div>
-            <div class="vision">
-                <h2>Nuestra Visión</h2>
-                <p>Ser la plataforma líder en conectar voluntarios con causas significativas, generando un impacto global sostenible y promoviendo una sociedad más inclusiva.</p>
-            </div>
-            <div class="valores">
-                <h2>Nuestros Valores</h2>
+        </div>
+    </section>
+
+    <section class="container-valores">
+        <div class="card-valores">
+            <div class="content-valores">
+                <h2><span class="title-second-color">Nuestros valores</span></h2>
                 <ul>
                     <li><strong>Compromiso:</strong> Trabajamos con pasión para construir un mundo mejor.</li>
                     <li><strong>Inclusión:</strong> Creemos en la diversidad como motor de cambio.</li>
@@ -86,46 +89,75 @@
                     <li><strong>Sostenibilidad:</strong> Promovemos acciones responsables con el medio ambiente y la sociedad.</li>
                 </ul>
             </div>
-        </section>
+        </div>
 
-        <!-- Historia -->
-        <section class="historia">
-            <h2>Nuestra Historia</h2>
-            <p>Inclunet Space nació en 2020 como respuesta a la creciente necesidad de conectar voluntarios con causas que realmente hacen la diferencia. Desde entonces, hemos trabajado con cientos de organizaciones y miles de voluntarios en todo el mundo, creando oportunidades que transforman vidas.</p>
-            <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDIwfHxob3BlfGVufDB8fHx8MTY4NTY1NzAxOA&ixlib=rb-1.2.1&q=80&w=1080" alt="Imagen representativa de nuestra historia">
-        </section>
-
-        <!-- Equipo -->
-        <section class="equipo">
-            <h2>Conoce a Nuestro Equipo</h2>
-            <div class="miembros">
-                <div class="miembro">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDd8fHBlcnNvbnxlbnwwfHx8fDE2ODU2NTc1MTA&ixlib=rb-1.2.1&q=80&w=400" alt="Foto de Juan Pérez, fundador de Inclunet Space">
-                    <h3>Juan Pérez</h3>
-                    <p><strong>Fundador y Director Ejecutivo</strong></p>
-                    <p>Apasionado por el cambio social, Juan lidera nuestra visión global.</p>
-                </div>
-                <div class="miembro">
-                    <img src="https://images.unsplash.com/photo-1528763380143-d52a06b9ac8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDh8fGdpcmx8ZW58MHx8fHwxNjg1NjU3NTM2&ixlib=rb-1.2.1&q=80&w=400" alt="Foto de María García, coordinadora de proyectos">
-                    <h3>María García</h3>
-                    <p><strong>Coordinadora de Proyectos</strong></p>
-                    <p>Experta en gestión de voluntariado, María organiza nuestras iniciativas clave.</p>
-                </div>
-                <div class="miembro">
-                    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDkxfHxwcm9mZXNzaW9uYWx8ZW58MHx8fHwxNjg1NjU3NTUy&ixlib=rb-1.2.1&q=80&w=400" alt="Foto de Carlos López, encargado de comunicaciones">
-                    <h3>Carlos López</h3>
-                    <p><strong>Encargado de Comunicaciones</strong></p>
-                    <p>Carlos asegura que nuestras historias inspiren a otros a unirse.</p>
-                </div>
+        <div class="side-cards">
+            <div class="side-card">
+                <h2>Nuestra vision</h2>
+                <p>Ser la plataforma líder en conectar voluntarios con causas significativas, generando un impacto global sostenible y promoviendo una sociedad más inclusiva.</p>
             </div>
-        </section>
+            <div class="side-card">
+                <h2>Nuestra mision</h2>
+                <p>Conectar a personas comprometidas con organizaciones que trabajan por el cambio social, promoviendo el voluntariado e impulsando la inclusión en comunidades de todo el mundo.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- CTA -->
-        <section class="cta">
-            <h2>¡Únete a Nuestra Comunidad!</h2>
-            <p>Si compartes nuestra visión y valores, queremos saber de ti. Haz clic en el botón para unirte a nuestro equipo de voluntarios.</p>
-            <a href="signup.html" class="btn-cta" title="Regístrate ahora como voluntario">Registrarme</a>
-        </section>
+    <section class="team-section"> 
+        <h2>Conoce a <span class="title-second-color">nuestro equipo</span></h2> 
+        <p>"Solos podemos hacer muy poco, juntos podemos hacer mucho."</p> 
+        <div class="team-members"> 
+            <div class="member-card"> 
+                <img src="https://via.placeholder.com/250" alt="Brandon James"> 
+                <div class="member-info"> 
+                    <h3>Angi Herrera </h3> 
+                    <p>Founder</p> 
+                    <div class="social-icons"> 
+                        <a href="#"><i class="fab fa-facebook-f"></i></a> 
+                        <a href="#"><i class="fab fa-twitter"></i></a> 
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="member-card"> 
+                <img src="https://via.placeholder.com/250" alt="Alex Parker"> 
+                <div class="member-info"> 
+                    <h3>Cristal Osorio </h3> 
+                    <p>Co-Founder</p> 
+                    <div class="social-icons"> 
+                        <a href="#"><i class="fab fa-facebook-f"></i>
+                        </a> <a href="#"><i class="fab fa-twitter"></i></a> 
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+                    </div>
+                </div> 
+            </div> 
+            <div class="member-card"> 
+                <img src="https://via.placeholder.com/250" alt="Victoria Thomas"> 
+                <div class="member-info"> 
+                    <h3>Russell Sanchez</h3> 
+                    <p>Business Manager</p> 
+                    <div class="social-icons"> 
+                        <a href="#"><i class="fab fa-facebook-f"></i></a> 
+                        <a href="#"><i class="fab fa-twitter"></i></a> 
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="member-card"> 
+                <img src="https://via.placeholder.com/250" alt="Brandon James"> 
+                <div class="member-info"> 
+                    <h3>Ivania Texna</h3> 
+                    <p>Founder</p> 
+                    <div class="social-icons"> 
+                        <a href="#"><i class="fab fa-facebook-f"></i></a> 
+                        <a href="#"><i class="fab fa-twitter"></i></a> 
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section>
+   
     </main>
 
     <footer>
